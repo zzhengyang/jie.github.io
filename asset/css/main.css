@@ -1,0 +1,481 @@
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+ html{height:100%;}
+body {
+    color: #2f2f2f;
+	height:100%;
+}
+.pure-img-responsive {max-width: 100%;height: auto; display:block;}
+/*
+ * -- PURE BUTTON STYLES --
+ * I want my pure-button elements to look a little different
+ */
+.pure-button {
+    background-color: #1f8dd6;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+
+a.pure-button-primary {
+    background: white;
+    color: #1f8dd6;
+    border-radius: 5px;
+    font-size: 120%;
+}
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+
+.home-menu {
+    text-align: right;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+
+}
+.home-menu {
+    background-color: rgba(79, 51, 38, 0.7);
+	-webkit-transition:background-color 0.5s ease;
+	-moz-transition:background-color 0.5s ease;
+	-ms-transition:background-color 0.5s ease;
+	-o-transition:background-color 0.5s ease;
+	transition:background-color 0.5s ease;
+}
+.opa_1{background-color: rgba(79, 51, 38, 1.0);
+	-webkit-transition:background-color 0.5s ease;
+	-moz-transition:background-color 0.5s ease;
+	-ms-transition:background-color 0.5s ease;
+	-o-transition:background-color 0.5s ease;
+	transition:background-color 0.5s ease;
+}
+.pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+.home-menu > nav > a{line-height:59px; display:inline-block; padding:0 !important; }  
+
+
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+
+.splash-container {
+    /*background-image: url('../../images/main/visual_1.jpg');*/
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* This is the main heading that appears on the blue section */
+.splash-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
+	width:100%;
+}
+
+/* This is the class used for the main content headers (<h2>) */
+.content-head {
+	font-size:1.75em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 2em 0 1em;
+	margin:2em 0;
+}
+.content-head::before{content:url('../../images/main/bar.png')}
+.content-head::after{content:url('../../images/main/bar.png')}
+
+.product_wrap{height:100%;}
+.product_wrap > ul{margin:0 auto; padding:0;	height:100%;}
+.product_wrap > ul > li{list-style:none;	height:100%; overflow:hidden;}
+.product_wrap > ul > li > div{text-align:center;}
+.product_wrap > ul > li > div > h1{font-size:2.25em;  font-family: 'Nanum Myeongjo', serif; serif; color:#684636; font-weight:100;}
+.product_wrap > ul > li > div > p.hr_1{border-bottom:1px solid #684636; width:60%; margin:0 auto;}
+/*.product_wrap > ul > li > div.product_txt{padding:8em 2em; font-family: 'Nanum Myeongjo', serif; serif;  color:#684636;font-size:26px; box-sizing:border-box;}*/
+.product_wrap > ul > li > div.product_txt{padding:4.5em 2em; font-family: 'Nanum Myeongjo', serif; color:#684636;font-size:26px; box-sizing:border-box;}
+.product_wrap > ul > li > div > p{margin-top: 1.75em; }
+/*.product_wrap > ul > li > div > p.product_btn{border:1px solid #684636; width:25%; margin:0 auto; margin-top:2.5em; padding:0.75em .5em; cursor:pointer;}*/
+.product_wrap > ul > li > div > p.product_btn{border:1px solid #684636; width:25%; margin:1em auto 0; padding:0.75em .5em; cursor:pointer;}
+.product_wrap > ul > li > div > p.product_btn:hover{background:#684636; color:#fff;}
+.bottom_wrap{width:100%; background:#4f3326; margin-bottom:2em;}
+.bottm_box{max-width:1200px; width:100%; margin:0 auto;}
+.menu_bottom{text-align:center; padding:.5em; color:#fff; padding: 1em; cursor:pointer; box-sizing:border-box; font-size: 14px;}
+.menu_bottom:hover{color:#c0c0c0;}
+/* This is a modifier class used when the content-head is inside a ribbon */
+/* 
+ul.product_wrap{margin:0 auto;padding:0; width:100%;}
+ul.product_wrap > li > div.product_txt{padding:5em 2em; font-family: 'Nanum Myeongjo', serif; text-align:center;}
+ul.product_wrap > li > div.product_txt > h1{font-size:4.5em; color:#684636; font-weight:100; margin:}
+ul.product_wrap > li > div.product_txt > p.hr_1{border-bottom:1px solid #684636; width:80%; margin:0 auto;} */
+
+
+/* This is the class used for the content sub-headers (<h3>) */
+.content-subhead {
+    color: #1f8dd6;
+}
+    .content-subhead i {
+        margin-right: 7px;
+    }
+
+/* This is the class used for the dark-background areas. */
+.ribbon {background-image:url("../../images/main/ribbon_bg.jpg");margin:0 auto;padding: 5em 2em; width:100%; box-sizing:border-box;}
+
+.ribbon_box{
+	width:55%;
+	background:#fff;
+	margin:0 auto;
+}
+
+.ribbon_box > div{
+	margin:0 auto;
+	text-align:center;
+	padding:4em 3.5em;
+}
+.ribbon_box > div > p{
+	font-size:2em;
+	color:#2f2f2f;
+	text-align:center;
+}
+
+.ribbon_box > div > span{
+	letter-spacing: 0.1em;
+	line-height:2em;
+}
+
+span.yellowbr{
+	color:#986b0c;
+	font-weight:100;
+}
+
+span.p_sm{
+	font-size:0.75em;
+}
+
+div.to_top{position:fixed;bottom:7%; right:5%; cursor:pointer; visibility: hidden; z-index:20;}
+.to_top.shown { visibility: visible; }
+/* This is the class used for the footer */
+.main_footer{background: #F6F6F6; width: 100%; padding-bottom:3em;}
+.main_footer div{text-align:center;}
+.main_footer div > div.sns_wrap{padding:2em 0 1em;}
+.main_footer div > div.sns_wrap > a:first-child{margin-right:2em;}
+.main_footer div > p{color:#4f3326; margin:.25em;}
+.main_footer div > p.copyright_txt{color:#4D4D4F; font-size:.9em; margin-top:3em;}
+.main_footer div > p.copyright_txt > a{text-decoration:none; color:#4D4D4F;}
+.m_addr{display:none;}
+
+/* ADD CLASS */
+.header .home-menu .nav_logo {text-align: center; position: absolute; top: 0; left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+@media screen and (max-width: 1024px){
+	.header .home-menu .nav_logo {left:20px;
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		-o-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+}
+/* moblie */
+ @media screen and (max-width: 35.5em){
+	.home-menu > nav > a{display:none;}
+	.menu_bottom{padding:.5em .75em; font-size:.9em;text-align:left;}
+	.ribbon{padding:5em 0;}
+	.ribbon_box{width:80%;}
+	.ribbon_box > div{padding:4em 0; }
+	.ribbon_box > div > h2{font-size:1.25em;}
+	.ribbon_box > div > span{font-size:0.8em;}
+	.content-head::after{display:none;}
+	.content-head::before{display:none;}
+	.product_wrap > ul > li > div.product_txt{padding:3em; font-size:1em;}
+	.product_wrap > ul > li > div > p.product_btn{margin-bottom:2.5em; width:55%;}
+	.logo_box{display:none;}
+	.ribbon_box > div > p{font-size:1.5em;}
+	div.monone{display:none;}
+	div.pcnone{display:inline-block;}
+	div.to_top{bottom:5%;}
+	div.to_top > img{width:80%}
+
+ }
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+  @media (max-width: 64em) {
+	/*ul.content{width:100%;}*/
+	.content-wrapper{top:75%;}
+	/*.ace-responsive-menu > li:first-child > a{margin-right:9em; padding:0;}*/
+	.pcnone{display:none;}
+	.monone{display:inline-block;}
+	.product_wrap > ul > li > div.product_txt{padding:0;}
+	.ribbon_box{width:90%;}
+}
+@media (max-width: 48em){
+	.content-head::after{display:none;}
+	.content-head::before{display:none;}
+	/*.content-wrapper{top:100%;}*/
+	.content-wrapper{top:600px;}
+	.resp_hide{display:none;}
+    body {font-size: 16px;}
+    .splash {width: 50%; height: 50%;}
+    .splash-head {font-size: 250%;}
+    /* We remove the border-separator assigned to .l-box-lrg */
+    .l-box-lrg {border: none;}
+	.ribbon_box{width:90%;}
+	.pcnone{display:none;}
+	.monone{display:inline-block;}
+	.product_wrap > ul > li > div.product_txt{font-size:1.25em;}
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
+
+@media (min-width: 78em) {
+    /* We increase the header font size even more */
+    .splash-head {font-size: 300%;}
+	/*.ace-responsive-menu > li:first-child > a {padding:0; margin-right:15em;}*/
+	.pcnone{display:none;}
+	.monone{display:inline-block;}
+}
+
+@media screen and (min-width: 80em) {
+	.m_addr{display:none;}
+	.content-wrapper {width:100%;}
+	/*.ace-responsive-menu > li:first-child > a {padding:0; margin-right:15em;}*/
+	.pcnone{display:none;}
+	.monone{display:inline-block;}
+}
+@media screen and (max-width: 768px){
+	.splash-container {max-height:600px;}
+}
+@media screen and (max-width: 425px){
+	.m_addr{display:block; font-size:.9em;}
+	.p_addr{display:none;}
+}
+/*gnb css*/
+
+.cssmenu ul,
+.cssmenu li,
+.cssmenu span,
+.cssmenu a {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.cssmenu {
+  line-height: 1;
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+}
+.cssmenu:after,
+.cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.cssmenu a {
+  background: #141414;
+  background: -moz-linear-gradient(top, #333333 0%, #141414 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(100%, #141414));
+  background: -webkit-linear-gradient(top, #333333 0%, #141414 100%);
+  background: -o-linear-gradient(top, #333333 0%, #141414 100%);
+  background: -ms-linear-gradient(top, #333333 0%, #141414 100%);
+  background: linear-gradient(to bottom, #333333 0%, #141414 100%);
+  color: #ffffff;
+  display: block;
+  font-family: 'Nanum Myeongjo', serif;
+  padding: 19px 20px;
+  text-decoration: none;
+}
+.cssmenu ul {
+  list-style: none;
+}
+.cssmenu > ul > li {
+  display: inline-block;
+  float: left;
+  margin: 0;
+}
+.cssmenu.align-center {
+  text-align: center;
+}
+.cssmenu.align-center > ul > li {
+  float: none;
+}
+.cssmenu.align-center ul ul {
+  text-align: left;
+}
+.cssmenu.align-right > ul {
+  float: right;
+}
+.cssmenu.align-right ul ul {
+  text-align: right;
+}
+.cssmenu > ul > li > a {
+  color: #ffffff;
+  font-size: 12px;
+}
+.cssmenu > ul > li:hover:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #0fa1e0;
+  margin-left: -10px;
+}
+.cssmenu > ul > li:first-child > a {
+  border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+}
+.cssmenu.align-right > ul > li:first-child > a,
+.cssmenu.align-center > ul > li:first-child > a {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+.cssmenu.align-right > ul > li:last-child > a {
+  border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+}
+.cssmenu > ul > li.active > a,
+.cssmenu > ul > li:hover > a {
+  color: #ffffff;
+  box-shadow: inset 0 0 3px #000000;
+  -moz-box-shadow: inset 0 0 3px #000000;
+  -webkit-box-shadow: inset 0 0 3px #000000;
+  background: #070707;
+  background: -moz-linear-gradient(top, #262626 0%, #070707 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #262626), color-stop(100%, #070707));
+  background: -webkit-linear-gradient(top, #262626 0%, #070707 100%);
+  background: -o-linear-gradient(top, #262626 0%, #070707 100%);
+  background: -ms-linear-gradient(top, #262626 0%, #070707 100%);
+  background: linear-gradient(to bottom, #262626 0%, #070707 100%);
+}
+.cssmenu .has-sub {
+  z-index: 1;
+}
+.cssmenu .has-sub:hover > ul {
+  display: block;
+}
+.cssmenu .has-sub ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  left: 0;
+}
+.cssmenu.align-right .has-sub ul {
+  left: auto;
+  right: 0;
+}
+.cssmenu .has-sub ul li {
+  *margin-bottom: -1px;
+}
+.cssmenu .has-sub ul li a {
+  background: #0fa1e0;
+  border-bottom: 1px dotted #31b7f1;
+  font-size: 11px;
+  filter: none;
+  display: block;
+  line-height: 120%;
+  padding: 10px;
+  color: #ffffff;
+}
+.cssmenu .has-sub ul li:hover a {
+  background: #0c7fb0;
+}
+.cssmenu ul ul li:hover > a {
+  color: #ffffff;
+}
+.cssmenu .has-sub .has-sub:hover > ul {
+  display: block;
+}
+.cssmenu .has-sub .has-sub ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.cssmenu.align-right .has-sub .has-sub ul,
+.cssmenu.align-right ul ul ul {
+  left: auto;
+  right: 100%;
+}
+.cssmenu .has-sub .has-sub ul li a {
+  background: #0c7fb0;
+  border-bottom: 1px dotted #31b7f1;
+}
+.cssmenu .has-sub .has-sub ul li a:hover {
+  background: #0a6d98;
+}
+.cssmenu ul ul li.last > a,
+.cssmenu ul ul li:last-child > a,
+.cssmenu ul ul ul li.last > a,
+.cssmenu ul ul ul li:last-child > a,
+.cssmenu .has-sub ul li:last-child > a,
+.cssmenu .has-sub ul li.last > a {
+  border-bottom: 0;
+}

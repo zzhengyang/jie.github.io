@@ -1,0 +1,132 @@
+/* BOARD TABLE - COMMON */
+.board_table {width:100%; border-collapse:collapse; border-radius: 4px;}
+#frm legend{margin-top:30px; font-size:20px; color:rgb(33,133,208); font-weight:600;}
+.dhform table th{background-color:#efefef;}
+.board_table.list_table thead {border-top: 1px solid #666;}
+.board_table.list_table tfoot tr td{text-align:center;}
+.board_table tr {border-bottom:1px solid #ccc;}
+.board_table th {padding:10px;}
+.board_table td {padding-top:12px; padding-bottom:12px; padding-left:10px; padding-right:10px;}
+/* BOARD TABLE - WRITE */
+.board_table.write_table {border-top:1px solid #666}
+.board_table.write_table.reply {margin-top:50px;}
+.board_table.write_table.reply thead tr th {background:#f8f8f8}
+/* BOARD TABLE - VIEW */
+.board_table.view_table thead {border-bottom:1px solid #666}
+.board_table.view_table thead tr {border:0}
+.board_table.view_table .board_title{margin:10px 0; text-align:initial;}
+.board_table.view_table .board_write_info{margin: 0; margin-bottom: 10px; font-weight: normal;}
+.board_table.view_table .board_content{ text-align:initial; word-wrap: break-word;}
+.board_table.view_table .board_content img{max-width:100%; height:auto !important}
+.prev_next_content {display:inline-block; float:left;}
+.prev_next_content .prev_content, .prev_next_content .next_content {display:inline-block}
+.prev-label {padding: .25em .5em; background: #684636; color: #fff; border-radius: 4px; margin-right:1em;}
+/* BOARD TABLE VIEW (GALLERY)*/
+.board_table.view_table.gallery_view > thead, .board_table.view_table.gallery_view > thead tr {border:0;}
+/* BOARD TABLE REPLY */
+.board_table.reply_table {border:1px solid #ccc; margin-top:50px;}
+.board_table.reply_table tbody td:first-child {width:150px; text-align:center;}
+.board_table.reply_table tbody td {width:100%;}
+.board_table.reply_table tbody td p.writer {font-size:16px; font-weight:bold;}
+.board_table.reply_table tbody td p.writer > .metadata {font-weight:400; font-size:14px; color:#666}
+/* PASSWORD MODAL */
+.custom-modal.ui-dialog {border:1px solid #ccc;}
+.custom-modal.ui-dialog #check_modal {padding:20px 10px;}
+.custom-modal.ui-dialog .ui-widget-header {background:#fff; border:0; border-bottom:1px solid #ccc;}
+.custom-modal.ui-dialog .ui-widget-content {margin:0; padding:0;}
+.custom-modal .ui-dialog-buttonset button {color:#fff; font-weight:600; background:#2185d0; border: 0; padding:7px 30px; outline:none; cursor:pointer; border-radius:2px; transition:all 0.3s ease;}
+.custom-modal .ui-dialog-buttonset button:last-child {background:#F15F5F;}
+.custom-modal .ui-dialog-buttonset button:hover {border:0; color:#fff; font-weight:600; background:#51dadc; transition:all 0.3s ease;}
+.custom-modal .ui-dialog-buttonset button:hover:last-child {background:#ff8c8c}
+#non_border {border:0;}
+
+/* bbs_content */
+.bbs_content, .board_content {max-width:1000px;}
+/* WRAPPING BOX */
+.search_box {margin-bottom:10px;}
+.btn_box {margin-top:10px;}
+.gallery_order_box {margin-bottom:10px;}
+.faqBox {border-top:1px solid #666}
+
+/* PAGINATION */
+.page_ul{margin:0 auto; text-align:center; display:table; padding:0;}
+.page_box {width:34px; height:34px; line-height:34px; background:#fff; display:table-cell; float:left; cursor:pointer; background-repeat:no-repeat; background-position:center;}
+.page_prev{margin-right:2px;}
+.page_next{margin-left:2px;}
+.page_num{margin:0 2px;}
+.page_num.on{height:31px; border-bottom:3px solid #555;}
+
+/* GALLERY STYLE */
+.box-gallery-list > .bbs-gallery-item {width: 300px; border: 0px solid #ccc; border-radius: 4px; box-sizing:border-box; margin:0 50px 2em 0; float:left; cursor:pointer;}
+.box-gallery-list > .bbs-gallery-item:nth-child(3n) {margin:0;}
+.box-gallery-list > .bbs-gallery-item > .gallery-order-box {padding:.5em;}
+.box-gallery-list > .bbs-gallery-item img {max-width: 100%; display: block; margin:auto;}
+.box-gallery-list > .bbs-gallery-item > .bbs-gallery-desc {padding:1em;}
+.box-gallery-list > .bbs-gallery-item > .bbs-gallery-desc > .bbs-gallery-sub-header {margin:0 0 1em; color:#666;}
+.box-gallery-list > .bbs-gallery-item > .bbs-gallery-desc > .bbs-gallery-header {margin:0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+/* WEBZINE */
+.box-webzine-list {width:100%; border-collapse:collapse; table-layout:fixed;}
+.box-webzine-list tbody tr {border-bottom:1px solid #ddd; cursor:pointer;}
+.box-webzine-list tbody tr:last-child {border-bottom:0;}
+.box-webzine-list tbody tr td {vertical-align:middle; padding:1em; word-wrap:break-word;}
+.box-webzine-list tbody tr td img {max-width:100%;}
+.box-webzine-list tbody tr td .webzine-title {border-bottom: 1px solid #ddd; margin: 0; padding: 1em 0; margin-bottom: 1em;}
+/* VISUAL MANAGEMENT */
+.box-visual_management {width:330px;}
+.preview_images {max-width:800px; position:fixed; top:50%; left:50%; display:none; border:1px solid #684636; padding:1em; background:#fff;
+	-webkit-transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+}
+/* INPUT STYLE */
+.bbs_input {width:100%; border:1px solid #ccc; outline:none; border-radius:4px; transition:all 0.3s ease;}
+.bbs_input[type="text"], .bbs_input[type="password"], .bbs_input[type="input"] {padding-top:6px; padding-bottom:6px; padding-left:10px; padding-right:10px; box-sizing:border-box;}
+.bbs_input.search_input {width:160px; height:31px; vertical-align:bottom;}
+select.bbs_input {width:240px; padding:4px; height:31px; vertical-align:bottom;}
+.open_yn {vertical-align:middle; width:22px; height:22px;}
+.open_yn + label {padding-left:5px; padding-right:10px;}
+.bbs_input:focus {border-color:#a07b6a;}
+/*.bbs_input.search_input:focus {border-color:#26babc; width:300px;}*/
+.notice_chk, .new_chk {width:22px; height:22px; vertical-align:middle;}
+
+/* TEXT-ALIGN */
+.center_align {text-align:center;}
+.left_align {text-align:left;}
+.right_align {text-align:right;}
+
+/* PUBLIC */
+.truncate {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.default_btn {color:#fff; font-weight:600; background:#684636; border: 0; padding:7px 30px; outline:none; cursor:pointer; border-radius:2px; transition:all 0.3s ease;}
+.default_btn:hover {background:#a07b6a; transition:all 0.3s ease;}
+.default_btn.order_change_btn {padding:7px 10px;}
+a.default_btn{color:#fff;}
+.default_btn2 {color:#fff; font-weight:600; line-height:1; background:#2185d0; border: 0; padding:4px 6px; outline:none; cursor:pointer; border-radius:2px; transition:all 0.3s ease;}
+.cancel_btn2 {color:#fff; font-weight:600; line-height:1; background:#F15F5F; border: 0; padding:4px 6px; outline:none; cursor:pointer; border-radius:2px; transition:all 0.3s ease;}
+
+.memo_frm legend{color:#ff4445;}
+.memo_table{margin-top:30px;}
+.memo_btn {color:#fff; font-weight:600; background:#2185d0; border: 0; padding:7px 10px; outline:none; cursor:pointer; border-radius:2px; transition:all 0.3s ease;}
+.memo_btn:hover {background:#51dadc; transition:all 0.3s ease;}
+
+.sub_table{width:924px; margin-bottom:20px; border-top:1px solid #1f1f1f;}
+.sub_table th{background:#f8f8f8; border-bottom:1px solid #ccc; text-align:left; padding:0 20px; font-size:14px;}
+.sub_table td{padding:10px 15px; border-bottom:1px solid #ccc;}
+.sub_table input{background:#fafafa; border:1px solid #ddd; height:23px; width:70%; padding-left:10px;}
+.sub_table .popup_types input{width:20px; height:20px; vertical-align:middle; margin:0px;}
+.sub_table .popup_size input{width:100px;}
+.sub_table #contents{background:#fafafa; border:1px solid #ddd; height:23px; max-width:723px; width:100%; padding-left:10px; min-height:100px;}
+/*.sub_table input#date1, input#date2{width:30%;}*/
+
+.sub_table.reply{width:100%; margin-top:50px;}
+.sub_table.reply thead tr th{text-align:center; padding:10px 0px 10px 0px;}
+
+.sub_table .reply_title, .sub_table .reply_content{text-align:initial;}
+
+.warning1{background-color:rgb(76,178,255); color:#fff;}
+.warning2{background-color:rgb(255,87,87); color:#fff;}
+.warning3{background-color:rgb(0,0,0); color:#fff;}
+
+.btnBox {margin-top:1em;}

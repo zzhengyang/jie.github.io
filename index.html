@@ -1,16 +1,773 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Github Page demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="index.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="asset/css/pure-min.css">
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="asset/css/grids-responsive-old-ie-min.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="asset/css/grids-responsive-min.css">
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="asset/js/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="asset/css/main.css?log=201806191800">
+	<link rel="stylesheet" href="asset/css/sub.css?log=201908120">
+	<link rel="stylesheet" href="asset/css/ace-responsive-menu.css">
+	<link rel="stylesheet" href="asset/css/slider_custom.css?log=201806191800">
+	<link rel="stylesheet" href="asset/css/slider_style.css?log=201806191800">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="asset/css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/default_table.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+	<script src="asset/js/jquery-3.1.1.min.js"></script>
+	<script src="asset/js/jquery-ui-1.12.0.min.js"></script>
+	<script src="asset/js/ace-responsive-menu-min.js"></script>
+	<script src="asset/js/slider_custom.js"></script>
+	<script src="asset/js/jquery.slitslider.js"></script>
+	<script src="asset/js/jquery.fullPage.js"></script>
+	<title>NEICHA</title>
 </head>
 <body>
-    <div id="main-content">
+<header class="header">
+	<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed opa_1">
+		<div class="resp_hide nav_logo">
+			<a href="index.html"><img src="images/main/logo.png"/></a>
+		</div>
+		<nav class="cd-main-nav-wrapper">
+		<!-- Menu Toggle btn-->
+			<div class="menu-toggle">
+				<h3><img src="images/main/logo.png" class="pure-img-responsive" onClick="javascript:location.href='index.html'"/></h3>
+				<button type="button" id="mobile_open_search_box" style="float: right; background: #202020; border: 1px solid #0C0C0C; padding: 6px; border-radius: 5px; cursor: pointer; margin: 10px;">
+					<span class="title"><img src="images/main/zoom.png"/></span>
+				</button>
+				<button type="button" id="menu-btn">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<ul id="respMenu" class="ace-responsive-menu cd-main-nav content" data-menu-style="horizontal">
+				  <!--li class="resp_hide">
+					 <a onClick="location.href='index.html'">
+					   <span class="title"><img src="images/main/logo.png"/></span>
+					</a>
+				  </li-->
+				  <li>
+					<a><span class="title">BRAND</span></a>
+					<!-- Level Two-->
+					 <ul>
+						<li onClick="location.href='sub1_01.html?go=first'">
+							<a>BRAND CONCEPT</a>
+						</li>
+						<li onClick="location.href='sub1_01.html?go=second'">
+							<a>LOGO CONCEPT</a>
+						</li>
+						<li onClick="location.href='sub1_01.html?go=third'">
+							<a href="#">CEO's MESSAGE</a>
+						</li>
+					</ul>
+				</li>
+				<!-- brand end-->
 
-    </div>
+				<li>
+					<a><span class="title">PRODUCT</span></a>
+					<!-- Level Two-->
+					<ul>
+						<li>
+							<a onClick="location.href='sub2.html'">NEW PRODUCT</a>
+						</li>
+						<li>
+							<a>EYELASH</a>
+							<!-- Level three-->
+							<ul>
+								<li onClick="location.href='sub2_01.html?MM=0'"><a href="sub2_01.html?MM=0">ALL</a></li>
+								<li onClick="location.href='sub2_01.html?MM=0&SM=0'"><a href="sub2_01.html?MM=0&SM=0">TRAY LASH</a></li>
+								<li onClick="location.href='sub2_01.html?MM=0&SM=1'"><a href="sub2_01.html?MM=0&SM=1">BULK LASH</a></li>
+								<li onClick="location.href='sub2_01.html?MM=0&SM=2'"><a href="sub2_01.html?MM=0&SM=2">STRIP LASH</a></li>
+								<li onClick="location.href='sub2_01.html?MM=0&SM=3'"><a href="sub2_01.html?MM=0&SM=3">INDIVIDUAL LASH</a></li>
+							</ul>
+						</li>
+						<li>
+							<a>ADHESIVE & REMOVER</a>
+							<!-- Level three-->
+							<ul>
+								<li onClick="location.href='sub2_01.html?MM=1'"><a href="sub2_01.html?MM=1">ALL</a></li>
+								<li onClick="location.href='sub2_01.html?MM=1&SM=0'"><a href="sub2_01.html?MM=1&SM=0">GLUE ODOR NEUTRALIZER</a></li>
+								<li onClick="location.href='sub2_01.html?MM=1&SM=1'"><a href="sub2_01.html?MM=1&SM=1">REMOVER</a></li>
+								<li onClick="location.href='sub2_01.html?MM=1&SM=2'"><a href="sub2_01.html?MM=1&SM=2">CLEANSER & PRIMER</a></li>
+								<li onClick="location.href='sub2_01.html?MM=1&SM=3'"><a href="sub2_01.html?MM=1&SM=3">ADHESIVE</a></li>
+							</ul>
+						</li>
+						<li>
+							<a>APPLICATION TOOLS</a>
+							<!-- Level three-->
+							<ul>
+								<li onClick="location.href='sub2_01.html?MM=2'"><a href="sub2_01.html?MM=2">ALL</a></li>
+								<li onClick="location.href='sub2_01.html?MM=2&SM=0'"><a href="sub2_01.html?MM=2&SM=0">BRUSH</a></li>
+								<li onClick="location.href='sub2_01.html?MM=2&SM=1'"><a href="sub2_01.html?MM=2&SM=1">TWEEZERS</a></li>
+								<li onClick="location.href='sub2_01.html?MM=2&SM=2'"><a href="sub2_01.html?MM=2&SM=2">TOOLS</a></li>
+								<li onClick="location.href='sub2_01.html?MM=2&SM=3'"><a href="sub2_01.html?MM=2&SM=3">MAKE UP BAGS</a></li>
+								<li onClick="location.href='sub2_01.html?MM=2&SM=4'"><a href="sub2_01.html?MM=2&SM=4">TAPES</a></li>
+							</ul>
+						</li>
+						<li>
+							<a onClick="location.href='sub2_01.html?MM=3&SM=0'">COSMETICS</a>
+						</li>
+						<li>
+							<a onClick="location.href='sub2_01.html?MM=4&SM=0'">KIT</a>
+						</li>
+					</ul>
+				</li>
+				<!--cosmetics end-->
+				<li>
+					<a onClick="location.href='sub4_01.html'"> <span class="title">NEWS&EVENT</span></a>
+				</li>
+				<!--new end-->
+				<li>
+					<a onClick="location.href='sub5_01.html'">
+						<span class="title">CONTACT</span>
+					</a>
+				</li>
+				<li class="last resp_hide" id="open_search_box">
+					<a href=""><span class="title"><img src="images/main/zoom.png"/></span></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+<!-- End of Responsive Menu -->
+</header>
+<article id="total_search_box">
+	<div class="total_search_row center_align">
+		<div class="total_search_item">
+			<input type="text" class="bbs_input" id="total_serach_input" />
+			<i class="fas fa-search fa-3x" id="search_product"></i>
+			<i class="fas fa-times fa-3x" id="close_search_box"></i>
+		</div>
+	</div>
+</article>
+<script type="text/javascript">
+	function productTotalSearch() {
+		//var sT = $(".search|_list").val();
+		var tV = $("#total_serach_input").val();
+		var URI = '?';
+
+		location.href="total_search.html"+URI+'&tValue='+tV;
+		//location.href=URI+'&searchType='+sT+'&tValue='+tV;
+	}
+	$(window).scroll(function(event){
+		var op = $('.home-menu');
+		if($(this).scrollTop() >= 200) op.removeClass("opa_1");
+		else op.addClass('opa_1');
+	});
+	$(document).ready(function(){
+		/* SEARCH-BOX OPEN */
+		$('#open_search_box, #mobile_open_search_box').click(function(){
+			$('#total_search_box').css({
+				'visibility': 'visible',
+				'opacity': 1,
+				'z-index': 999
+			});
+		});
+		/* SEARCH-BOX CLOSE */
+		$('#close_search_box').click(function(){
+			$('#total_serach_input').val("");
+			$('#total_search_box').css({
+				'visibility': 'hidden',
+				'opacity': 0,
+				'z-index': -1
+			});
+		});
+		$("#search_product").click(function(){
+			productTotalSearch();
+		});
+		
+		$("#total_serach_input").keypress(function(e){
+			if(e.keyCode == 13){
+				productTotalSearch();
+			}
+		});
+	});
+</script><script type="text/javascript">
+	function setCookie( name, value, expiredays ) { 
+		var todayDate = new Date(); 
+		todayDate.setDate( todayDate.getDate() + expiredays ); 
+		document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
+	} 
+	function getCookie(name){
+		var nameOfCookie = "oasis_popup"+name + "="; 
+		var x = 0;
+		while(x<= document.cookie.length){
+			var y = (x+nameOfCookie.length);
+			if(document.cookie.substring(x, y)== nameOfCookie){
+				if((endOfCookie=document.cookie.indexOf( ";", y)) == -1 )	endOfCookie = document.cookie.length; 
+				return unescape( document.cookie.substring( y, endOfCookie ) ); 
+			}
+			x = document.cookie.indexOf( " ", x ) + 1; 
+			if ( x == 0 ) break;
+		}
+		return ""; 
+	}
+	function openPopup(name){
+		if(!getCookie(name)) {
+			var popName = "#pop"+name;
+			$(popName).css("display","block");
+		}
+	}
+	function closePopup(layerNo) {
+		var today ="2020-03-29";
+
+		var popContent = $(".popno_"+layerNo);
+		var popInput = popContent.find("#popCheck");
+		var cookieName = "oasis_popup"+layerNo;
+
+		if($(popInput).is(":checked")){
+			setCookie(cookieName, today, 1);
+		}
+
+		$(popContent).remove();
+	}
+
+	function bxSlider_thumb_change(no){
+		var idx = $('.slides'+no+" li:visible").index();
+		var max_li = $('.slides'+no+" li").length;
+
+		idx++;
+
+		if(idx == max_li){
+			idx = 0;
+		}
+
+		$(".slider_thum"+no+" li").removeClass("active");
+		$(".slider_thum"+no+" li").eq(idx).addClass("active");
+		var slider_title = $(".slider_thum"+no+" li").eq(idx).attr("data-title");
+		$(".popno_"+no).children("p:first-child").text(slider_title);
+	}
+
+	function setSlider(no, device){
+		if(device != "mobile") {
+			var bxTag = '.slides'+no;
+		} else {
+			var bxTag = '.mobile_slides'+no;
+		}
+		$(bxTag).bxSlider({
+			pager: false,
+			controls: false,
+			auto: true,
+			mode: 'fade',
+			autoHover: true,
+
+			onSlideNext: function(){
+				bxSlider_thumb_change(no);
+			}
+		});
+	}
+
+	function getImgList(bkey, obj_no, size_x, size_y, device){
+		$.ajax({
+			type : 'post'
+			, async  :  true
+			, url  :  './api/popup.api.php'
+			, data : {
+				type : 'getImgList'
+				, bkey : bkey
+			}
+			, success : function(response) {
+				if(response.RESULT == 1){
+					if(device != "mobile") {
+						var addClass = ".slides"+obj_no;
+					} else {
+						var addClass = ".mobile_slides"+obj_no;
+					}
+					var aHtml = Array();
+					var tmp_aHtml = Array();
+					var thum_sx = parseInt(size_x / 3);
+					var thum_sy = parseInt(size_y / 3);
+					tmp_aHtml.push('<ul class="slider_thum slider_thum'+obj_no+'">');
+
+					var cnt = 0;
+
+					$.each(response.DATA, function(k, v){
+						aHtml.push('<li onclick="javascript:window.open(\''+v.flink+'\')" style="cursor:pointer;"><img src="upload/popup/'+v.fname+'" style="max-width:'+size_x+'px"/></li>');
+
+						tmp_aHtml.push('<li '+ (cnt == 0 ? " class='active'":"") +' data-title="'+v.title+'" style="height:'+thum_sx+'px;">');
+						tmp_aHtml.push('	<img src="upload/popup/'+v.fname+'" style="width:100%;"/>');
+						tmp_aHtml.push('</li>');
+						cnt++;
+					});
+					$(addClass).html(aHtml.join(''));
+					if(device != "mobile") {
+						setSlider(obj_no, "pc");
+					} else {
+						setSlider(obj_no, "mobile");
+					}
+
+					tmp_aHtml.push('</ul>');
+					if(device != "mobile") {
+						$("#slider"+obj_no).after(tmp_aHtml.join(''));
+					} else {
+						$("#mobile_slider"+obj_no).after(tmp_aHtml.join(''));
+					}
+
+				}else{
+					alert(response.MSG);
+				}
+			}
+			, error : function(request, status, error) {
+				//console.log(error);
+				return;
+			}
+			, cache : false
+			, dataType : 'json'
+		});
+	}
+</script>
+<style>
+.pop_content{width:100%; position:absolute; z-index:9999;}
+
+.pop_style_normal{border:2px solid #684636; background-color:white; position:absolute; left:50%; padding:10px; text-align:center; z-index:10000; cursor: move;}
+.pop_style_normal p:first-child{ border-bottom:1px solid #684636; margin-bottom:10px; padding-bottom:5px;}
+.pop_style_normal p:last-child{text-align:right;}
+
+.pop_style_editor{border:2px solid #684636; background-color:white; position:absolute; left:50%; padding:10px; z-index:10000; cursor: move;}
+.pop_style_editor p:first-child{ border-bottom:1px solid #684636; margin-bottom:10px; padding-bottom:5px; text-align:center;}
+.pop_style_editor p:last-child{text-align:right;}
+.pop_style_editor img {max-width:100%; height:auto !important}
+
+.pop_style_sliders{border:2px solid #684636; background-color:white; position:absolute; left:50%; padding:10px; text-align:center; z-index:10000; cursor: move;}
+.pop_style_sliders p:first-child{ border-bottom:1px solid #684636; margin-bottom:10px; padding-bottom:5px; font-size:15pt; font-weight:600;}
+.pop_style_sliders p:last-child{text-align:right;}
+.pop_style_sliders .bx-wrapper{margin:0 !important;}
+.pop_style_sliders .popSlider ul{margin:0;}
+.pop_style_sliders .popSlider ul li{left:0;}
+.pop_style_sliders .popSlider ul li img{margin: 0 auto;}
+.pop_style_sliders .slider_thum{padding:0; margin:0; display:table; width:100%;}
+.pop_style_sliders .slider_thum li{list-style:none; width:33.3%; float:left; border:1px solid #ededed; box-sizing:border-box;}
+.pop_style_sliders .slider_thum li.active{border:2px solid #76a4cf; box-sizing:border-box;}
+.pop_style_sliders .slider_thum li img {max-height:100%;}
+
+.mobile-tablet-popup {display:none; position:absolute !important; top:50px; border:5px solid #684636; max-width: 600px; margin: auto; background: #fff; padding: 10px; text-align: center; box-sizing:border-box;}
+.mobile-tablet-popup img {max-width:100% !important; height:auto !important;}
+.mobile-tablet-popup p:first-child {border-bottom: 1px solid #684636; padding-bottom: 10px;}
+@media screen and (max-width: 768px){
+	.pop_style_normal,
+	.pop_style_editor,
+	.pop_style_sliders {display:none;}
+	.mobile-tablet-popup {display:block; margin: 0 5.4em;}
+
+	.mobile-tablet-popup .bx-wrapper{margin:0 !important;}
+	.mobile-tablet-popup .popSlider ul{margin:0;}
+	.mobile-tablet-popup .popSlider ul li{left:0;}
+	.mobile-tablet-popup .popSlider ul li img{margin: 0 auto;}
+	.mobile-tablet-popup .slider_thum{padding:0; margin:0; display:table; width:100%;}
+	.mobile-tablet-popup .slider_thum li{list-style:none; width:33.3%; height:150px !important; float:left; border:1px solid #ededed; box-sizing:border-box;}
+	.mobile-tablet-popup .slider_thum li.active{border:2px solid #76a4cf; box-sizing:border-box;}
+	.mobile-tablet-popup .slider_thum li img {max-height:100%;}
+}
+@media screen and (max-width: 425px){
+	.mobile-tablet-popup {max-width:300px; margin: 0 3.4em;}
+	.mobile-tablet-popup .slider_thum li {height:75px !important}
+}
+</style>
+<div class="pop_content">
+</div>
+	<!-- visual -->
+<div class="splash-container cd-main-content container demo-1">
+	<!-- slider -->
+	<div id="slider" class="sl-slider-wrapper">
+		
+		<div class="sl-slider" style="width: 1398px; height: 766px;"><div class="sl-slides-wrapper"><div class="sl-slide sl-slide-horizontal" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" style="z-index: 1; display: none;">	<div class="sl-content-wrapper" style="width: 1398px; height: 766px;"><div class="sl-content"><div class="sl-slide-inner" style="background-image:url(images/main/back.jpg)">		<h2>NEICHA <span>It's yours.</span></h2>		<p><i><span>B</span>loom individual flowers on your eyes with</i><img src="images/main/visual_logo.png"></p>	</div></div></div></div><div class="sl-slide sl-slide-horizontal sl-trans-elems" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" style="z-index: 1;">	<div class="sl-content-wrapper" style="width: 1398px; height: 766px;"><div class="sl-content"><div class="sl-slide-inner" style="background-image:url(images/main/back.jpg)">		<h2>NEICHA <span>It's yours.</span></h2>		<p><i><span>B</span>loom individual flowers on your eyes with</i><img src="images/main/visual_logo.png"></p>	</div></div></div></div></div></div>
+		
+
+		<nav id="nav-dots" class="nav-dots">
+			<!--span class="nav-dot-current"></span>
+			<span></span-->
+		</nav>
+	</div>
+</div>
+<!--END  slider -->
+
+<div class="content-wrapper">
+	<div class="ribbon l-box-lrg">
+		<div class="ribbon_box">
+			<div>
+				<img src="images/main/logo_b.png"/>
+				<h2 class="content-head">B R A N D  C O N C E P T</h2>
+				<p>
+					<span class="yellowbr">NEICHA</span> ± <span class="yellowbr">Neige</span><span class="p_sm">(pure)</span> + <span class="yellowbr">Charmant</span><span class="p_sm">(adorable &amp; beautiful)</span>
+				</p>
+				<span>
+					NEICHA means PURE BEAUTY which is a compound world with Neige(pure)<br/>
+					and Charmant(adorable &amp; beautiful)from French, this brand will add more pure<br/>
+					and clean beauty based on your original beauty. NEICHA will give a direction<br/>
+					of the way to a better beauty by offering a differentiated service with the best<br/>
+					quality eyelashes and careproducts.
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="product_wrap scroll-target">
+		<ul>
+			<li class="pure-g">
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 product_list wow fadeInLeft">
+					<img src="images/main/cont_01.jpg" class="pure-img-responsive manage_image01" />
+				</div>
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 product_list product_txt wow fadeInRight">
+					<h1 class="manage_image_title01">
+						Amazingly
+						<br>
+						precise
+					</h1>
+					<p class="hr_1"></p>
+					<p class="manage_image_desc01">
+						Deep black color all day long.
+						<br>
+						Water-proof innovative formula.
+					</p>
+					<p class="product_btn manage_image_btn01" onClick="javascript:location.href='sub2_01.html?MM=0'">more</p>
+				</div>
+			</li>
+			<li class="pure-g">
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 product_list product_txt monone wow fadeInLeft" data-wow-delay="0.5s">
+					<h1 class="manage_image_title02">
+						Build full,
+						<br>
+						beautiful brows
+					</h1>
+					<p class="hr_1"></p>
+					<p class="manage_image_desc02">
+						Created with a precise width and firmness to seamlessly
+						<br>
+						blend color and make your brows look finished.
+					</p>
+					<p class="product_btn manage_image_btn02" onClick="javascript:location.href='sub2_01.html?MM=1'">more</p>
+				</div>
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 product_list wow fadeInRight" data-wow-delay="0.5s">
+					<img src="images/main/cont_02.jpg" class="pure-img-responsive manage_image02" />
+				</div>
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 product_list product_txt pcnone wow fadeInLeft" data-wow-delay="0.5s">
+					<h1 class="manage_image_title02"></h1>
+					<p class="hr_1"></p>
+					<p class="manage_image_desc02"></p>
+					<p class="product_btn manage_image_btn02" onClick="javascript:location.href='sub2_01.html?MM=1'">more</p>
+				</div>
+			</li>
+			<li class="pure-g">
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 product_list wow fadeInLeft">
+					<img src="images/main/cont_03.jpg" class="pure-img-responsive manage_image03" />
+				</div>
+				<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 product_list product_txt wow fadeInRight">
+					<h1 class="manage_image_title03">
+						NEICHA MAGIC
+						<br>
+						VOLUME PREMIUM
+					</h1>
+					<p class="hr_1"></p>
+					<p class="manage_image_desc03">
+						Be the first to try the world's No.1 Eyelash Technology
+						<br>
+						Perfect design, Perfect choice New Magic Volume Lash
+					</p>
+					<p class="product_btn manage_image_btn03" onClick="javascript:location.href='sub2_01.html?MM=2'">more</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<link rel="stylesheet" href="asset/css/jquery.bxslider.min.css">
+	<link rel="stylesheet" href="asset/css/animate.css">
+	<script src="asset/js/jquery.bxslider.min.js"></script>
+	<script src="asset/js/imagesloaded.pkgd.min.js"></script>
+	<script src="asset/js/wow.min.js"></script>
+	<script src="asset/js/createVisual.js"></script>
+	<script type="text/javascript">
+		var focus='';
+		function getSlideImages() {
+			$.ajax({
+				type : 'post'
+				, async  :  true
+				, url  :  './api/visual_image.api.php'
+				, data : {
+					type : 'getSlideImages'
+				}
+				, success : function(response) {
+					if(response.RESULT == 1){
+						var aHtml = Array();
+						var slideIdx = 0;
+						$.each(response.DATA, function(k, v) {
+
+							var get_filename = v.file_name;
+							var file_name = "";
+							if(get_filename.length > 0){
+								file_name = "upload/visual_image/"+v.file_name;
+							}
+							if(file_name != "") {
+								slideIdx = k + 1;
+
+								aHtml.push('<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">');
+								aHtml.push('	<div class="sl-slide-inner" style="background-image:url('+ file_name +')">');
+								aHtml.push('		<h2>NEICHA <span>It\'s yours.</span></h2>');
+								aHtml.push('		<p><i><span>B</span>loom individual flowers on your eyes with</i><img src="images/main/visual_logo.png"/></p>');
+								aHtml.push('	</div>');
+								aHtml.push('</div>');
+
+								/* VISUAL NAV SETTING */
+								$('#nav-dots').append('<span></span>');
+							}
+						});
+					}else{
+						alert(response.MSG);
+					}
+					$('.sl-slider').html(aHtml.join(''));
+					/* VISUAL NAV ACTIVE */
+					$('#nav-dots span:first-child').addClass('nav-dot-current');
+					/* CREATE VISUAL */
+					createVisual();
+				}
+				, error : function(request, status, error) {
+					console.log(error);
+					// return;
+				}
+				, cache : false
+				, dataType : 'json'
+			});
+		}
+
+		function getMainImages() {
+			$.ajax({
+				type : 'post'
+				, async  :  true
+				, url  :  './api/main_image.api.php'
+				, data : {
+					type : 'getMainImages'
+				}
+				, success : function(response) {
+					if(response.RESULT == 1){
+						var image_idx = 0;
+						$.each(response.DATA, function(k, v) {
+							image_idx = k + 1;
+
+							var get_filename = v.file_name;
+							var file_name = "";
+							if(get_filename.length > 0){
+								file_name = "upload/main_image/thum/"+v.file_name;
+							}else{
+								file_name = "images/admin/no-image.png";
+							}
+
+							$('.manage_image0'+image_idx).attr('src', file_name);
+							$('.manage_image_title0'+image_idx).html(v.title);
+							$('.manage_image_desc0'+image_idx).html(v.contents);
+							var manage_image_link = "javascript:location.href='" + v.url + "'";
+							$('.manage_image_btn0'+image_idx).attr('onClick', manage_image_link);
+						});
+					}else{
+						alert(response.MSG);
+					}
+				}
+				, error : function(request, status, error) {
+					console.log(error);
+					// return;
+				}
+				, cache : false
+				, dataType : 'json'
+			});
+		}
+
+		$(document).ready(function(){
+			//$("body").imagesLoaded(function(){
+				new WOW().init();
+			//});
+
+			if(focus == 'focus'){
+				var obj = $(".scroll-target").offset();
+				var obj_top_value = obj.top;
+
+				var gnb_height = $(".second_logo").height();
+
+				var top_value = obj_top_value - gnb_height;
+				goFocus(top_value, 1000);
+			}
+
+			getSlideImages();
+			getMainImages();
+
+			var today = '2020-03-29';
+			$.ajax({
+				type : 'post'
+				, async  :  true
+				, url  :  './api/popup.api.php'
+				, data : {
+					type : 'getListView'
+				}
+				, success : function(response) {
+					if(response.RESULT == 1){
+						if(response.CNT > 0){
+							var cnt=0;
+							$.each(response.DATA, function(k, v) {
+								var popValue = getCookie(v.no);
+
+								if(popValue != today){
+									var aHtml = Array();
+									cnt++;
+
+									switch(v.type){
+										case 'normal':
+											aHtml.push('<div class="pop_style_normal popno_'+v.no+'" style="width:'+v.sx+'px; height:'+v.sy+'px; margin-left:'+v.px+'px; margin-top:'+v.py+'px;">');
+											aHtml.push('	<p>'+ v.title +'</p>');
+											aHtml.push('	<p>');
+											if(v.flink.length > 0){
+												aHtml.push('<a href="'+v.flink+'" target="_blank">');
+											}
+											aHtml.push('		<img src="upload/popup/'+ v.fname +'" style="max-width:'+v.sx+'px; max-height:'+(v.sy - 50)+'px;" />');
+											if(v.flink.length > 0){
+												aHtml.push('</a>');
+											}
+											aHtml.push('	</p>');
+
+											aHtml.push('	<p><input type="checkbox" id="popCheck" />I don\'t see it today.<button class="default_btn" onclick="javascript:closePopup('+v.no+')">Close</button></p>');
+											aHtml.push('</div>');
+
+											/* MOBILE TABLET */
+											aHtml.push('<div class="mobile-tablet-popup popno_'+v.no+'">');
+											aHtml.push('	<p>'+ v.title +'</p>');
+											aHtml.push('	<img src="upload/popup/'+ v.fname +'" />');
+											aHtml.push('	<p class="right_align"><input type="checkbox" id="popCheck" />I don\'t see it today.<button class="default_btn" onclick="javascript:closePopup('+v.no+')">Close</button></p>');
+											aHtml.push('</div>');
+										break;
+
+										case 'editor':
+											aHtml.push('<div class="pop_style_editor popno_'+v.no+'" style="width:'+v.sx+'px; height:'+v.sy+'px; margin-left:'+v.px+'px; margin-top:'+v.py+'px;">');
+											aHtml.push('	<p>'+ v.title +'</p>');
+											aHtml.push('	<div>'+v.ct+'</div>');
+											aHtml.push('	<p><input type="checkbox" id="popCheck" />I don\'t see it today.<button class="default_btn" onclick="javascript:closePopup('+v.no+')">Close</button></p>');
+											aHtml.push('</div>');
+
+											/* MOBILE TABLET */
+											aHtml.push('<div class="mobile-tablet-popup popno_'+v.no+'">');
+											aHtml.push('	<p>'+ v.title +'</p>');
+											aHtml.push('	<div>'+v.ct+'</div>');
+											aHtml.push('	<p class="right_align"><input type="checkbox" id="popCheck" />I don\'t see it today.<button class="default_btn" onclick="javascript:closePopup('+v.no+')">Close</button></p>');
+											aHtml.push('</div>');
+										break;
+
+										case 'sliders':
+											aHtml.push('<div class="pop_style_sliders popno_'+v.no+'" style="width:'+v.sx+'px; min-height:'+v.sy+'px; margin-left:'+v.px+'px; margin-top:'+v.py+'px;">');
+											aHtml.push('	<p>'+ v.title +'</p>');
+											aHtml.push('	<div id="slider'+v.no+'" class="popSlider">');
+											aHtml.push('		<ul class="slides'+v.no+'">');
+											aHtml.push('		</ul>');
+											aHtml.push('	</div>');
+
+											getImgList(v.bkey, v.no, v.sx, v.sy, "pc");
+
+											aHtml.push('	<p><input type="checkbox" id="popCheck" />I don\'t see it today.<button class="default_btn" onclick="javascript:closePopup('+v.no+')">Close</button></p>');
+											aHtml.push('</div>');
+
+											/* MOBILE TABLET */
+											aHtml.push('<div class="mobile-tablet-popup popno_'+v.no+'">');
+											aHtml.push('	<p>'+ v.title +'</p>');
+											aHtml.push('	<div id="mobile_slider'+v.no+'" class="popSlider">');
+											aHtml.push('		<ul class="mobile_slides'+v.no+'">');
+											aHtml.push('		</ul>');
+											aHtml.push('	</div>');
+
+											getImgList(v.bkey, v.no, v.sx, v.sy, "mobile");
+
+											aHtml.push('	<p class="right_align"><input type="checkbox" id="popCheck" />I don\'t see it today.<button class="default_btn" onclick="javascript:closePopup('+v.no+')">Close</button></p>');
+											aHtml.push('</div>');
+										break;
+									}
+									if(cnt == 1){
+										$(".pop_content").html(aHtml.join(''));
+									}else{
+										$(".pop_content").children("div:last-child").after(aHtml.join(''));
+									}
+									$(".popno_"+v.no).draggable();
+									$(".popno_"+v.no).hover(function(){
+										$(this).css('z-index', "20000");
+									}, function(){
+										$(this).css('z-index', "10000");
+									});
+								}
+							});
+						}
+					}else{
+						alert(response.MSG);
+					}
+				}
+				, error : function(request, status, error) {
+					console.log(error);
+					// return;
+				}
+				, cache : false
+				, dataType : 'json'
+			});
+		});
+	</script>
+	<div class="to_top">
+	<img src="images/main/totop.png"/>
+</div>
+<footer class="main_footer">
+	<div class="pure-g bottom_wrap">
+		<div class="bottm_box">
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2.html'">NEW PRODUCT</div>
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2_01.html?MM=0'">EYELASH</div>
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2_01.html?MM=1'">ADHESIVE & REMOVER</div>
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2_01.html?MM=2'">APPLICATION TOOLS</div>
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2_01.html?MM=3&SM=0'">COSMETICS</div>
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2_01.html?MM=4&SM=0'">KIT</div>
+		</div>
+	</div>
+	<div>
+		<img src="images/main/logo_f.png"/>
+		<div class="sns_wrap">
+			<a href="https://www.youtube.com/watch?v=-xC9-mWUZAU" target="_blank"><img src="images/main/ytub_icon.png"/></a>
+			<a href="https://www.instagram.com/neicha.official/" target="_blank"><img src="images/main/inst_icon.png" /></a>
+		</div>
+		<p>Email : neicha@hschemical.kr</p>
+		<!--
+		<p class="p_addr">Address : 1ST FLOOR, 168, YONGHYEON-RO, UIJEONGBU-SI, GYEONGGI-DO, 11808 REPUBLIC OF KOREA<br/>Tel : +82-31-855-9488&emsp;&emsp;Fax : +82-31-855-9588</p>
+		<p class="m_addr">Address : 1ST FLOOR, 168, YONGHYEON-RO,<br/> UIJEONGBU-SI, GYEONGGI-DO, <br/>11808 REPUBLIC OF KOREA<br/>Tel : +82-31-855-9488<br/>Fax : +82-31-855-9588</p>
+		-->
+		<p class="p_addr">Address : 39, SANDAN-RO 68-GIL, UIJEONGBU-SI, GYEONGGI-DO, 11781 REPUBLIC OF KOREA<br/>Tel : +82-31-871-2267&emsp;&emsp;Fax : +82-31-848-2267</p>
+		<p class="m_addr">Address : 39, SANDAN-RO 68-GIL,<br/> UIJEONGBU-SI, GYEONGGI-DO, <br/>11781 REPUBLIC OF KOREA<br/>Tel : +82-31-871-2267<br/>Fax : +82-31-848-2267</p>
+		<p></p>
+		<p class="copyright_txt">ⓒ COPYRIGHT NEICHA ALL RIGHTS RESERVED.<a href="admin">&nbsp;&nbsp;</a>&emsp;&emsp;<a href="http://www.500bill.co.kr/" target="_blank">Design by OASIS</a></p>
+	</div>
+</footer>
+<script type="text/javascript">
+	$(window).scroll(function() {
+	  var el = $('.to_top');
+	  
+	  if($(this).scrollTop() >= 400) el.addClass('shown');
+	  else el.removeClass('shown');
+	});
+	 $(document).ready(function () {
+		 $("#respMenu").aceResponsiveMenu({
+			 resizeWidth: '768', // Set the same in Media query       
+			 animationSpeed: 'fast', //slow, medium, fast
+			 accoridonExpAll: false //Expands all the accordion menu on click
+		 });
+		 $("div.to_top").click(function(){
+			 $("html").stop().animate({scrollTop: 0}, 500);
+		 });
+		 $(function(){
+			 var subMargin = $("div.home-menu").css("height");
+			 $("section.sub_wrap, .product_box").css("padding-top",subMargin);
+			 $("section.pro_info_wrap").css("padding-top",subMargin);
+		 });
+	 });
+		
+	</script>
 </body>
-</html>
+</html></div>
