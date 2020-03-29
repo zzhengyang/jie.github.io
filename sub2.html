@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="asset/css/pure-min.css">
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="asset/css/grids-responsive-old-ie-min.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="asset/css/grids-responsive-min.css">
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="asset/js/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="asset/css/main.css?log=201806191800">
+	<link rel="stylesheet" href="asset/css/sub.css?log=201908120">
+	<link rel="stylesheet" href="asset/css/ace-responsive-menu.css">
+	<link rel="stylesheet" href="asset/css/slider_custom.css?log=201806191800">
+	<link rel="stylesheet" href="asset/css/slider_style.css?log=201806191800">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="asset/css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/default_table.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+	<script src="asset/js/jquery-3.1.1.min.js"></script>
+	<script src="asset/js/jquery-ui-1.12.0.min.js"></script>
+	<script src="asset/js/ace-responsive-menu-min.js"></script>
+	<script src="asset/js/slider_custom.js"></script>
+	<script src="asset/js/jquery.slitslider.js"></script>
+	<script src="asset/js/jquery.fullPage.js"></script>
+	<title>NEICHA</title>
+</head>
+<body>
+<header class="header">
+	<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed opa_1">
+		<div class="resp_hide nav_logo">
+			<a href="index.html"><img src="images/main/logo.png"/></a>
+		</div>
+		<nav class="cd-main-nav-wrapper">
+		<!-- Menu Toggle btn-->
+			<div class="menu-toggle">
+				<h3><img src="images/main/logo.png" class="pure-img-responsive" onClick="javascript:location.href='index.html'"/></h3>
+				<button type="button" id="mobile_open_search_box" style="float: right; background: #202020; border: 1px solid #0C0C0C; padding: 6px; border-radius: 5px; cursor: pointer; margin: 10px;">
+					<span class="title"><img src="images/main/zoom.png"/></span>
+				</button>
+				<button type="button" id="menu-btn">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<ul id="respMenu" class="ace-responsive-menu cd-main-nav content" data-menu-style="horizontal">
+				  <!--li class="resp_hide">
+					 <a onClick="location.href='index.html'">
+					   <span class="title"><img src="images/main/logo.png"/></span>
+					</a>
+				  </li-->
+				  <li>
+					<a><span class="title">BRAND</span></a>
+					<!-- Level Two-->
+					 <ul>
+						<li onClick="location.href='sub1_01.html?go=first'">
+							<a>BRAND CONCEPT</a>
+						</li>
+						<li onClick="location.href='sub1_01.html?go=second'">
+							<a>LOGO CONCEPT</a>
+						</li>
+						<li onClick="location.href='sub1_01.html?go=third'">
+							<a href="#">CEO's MESSAGE</a>
+						</li>
+					</ul>
+				</li>
+				<!-- brand end-->
+
+				<li>
+					<a><span class="title">PRODUCT</span></a>
+					<!-- Level Two-->
+					<ul>
+						<li>
+							<a onClick="location.href='sub2.html'">NEW PRODUCT</a>
+						</li>
+						<li>
+							<a>EYELASH</a>
+							<!-- Level three-->
+							<ul>
+								<li onClick="location.href='sub2_01.html?MM=0'"><a href="sub2_01.html?MM=0">ALL</a></li>
+								<li onClick="location.href='sub2_01.html?MM=0&SM=0'"><a href="sub2_01.html?MM=0&SM=0">TRAY LASH</a></li>
+								<li onClick="location.href='sub2_01.html?MM=0&SM=1'"><a href="sub2_01.html?MM=0&SM=1">BULK LASH</a></li>
+								<li onClick="location.href='sub2_01.html?MM=0&SM=2'"><a href="sub2_01.html?MM=0&SM=2">STRIP LASH</a></li>
+								<li onClick="location.href='sub2_01.html?MM=0&SM=3'"><a href="sub2_01.html?MM=0&SM=3">INDIVIDUAL LASH</a></li>
+							</ul>
+						</li>
+						<li>
+							<a>ADHESIVE & REMOVER</a>
+							<!-- Level three-->
+							<ul>
+								<li onClick="location.href='sub2_01.html?MM=1'"><a href="sub2_01.html?MM=1">ALL</a></li>
+								<li onClick="location.href='sub2_01.html?MM=1&SM=0'"><a href="sub2_01.html?MM=1&SM=0">GLUE ODOR NEUTRALIZER</a></li>
+								<li onClick="location.href='sub2_01.html?MM=1&SM=1'"><a href="sub2_01.html?MM=1&SM=1">REMOVER</a></li>
+								<li onClick="location.href='sub2_01.html?MM=1&SM=2'"><a href="sub2_01.html?MM=1&SM=2">CLEANSER & PRIMER</a></li>
+								<li onClick="location.href='sub2_01.html?MM=1&SM=3'"><a href="sub2_01.html?MM=1&SM=3">ADHESIVE</a></li>
+							</ul>
+						</li>
+						<li>
+							<a>APPLICATION TOOLS</a>
+							<!-- Level three-->
+							<ul>
+								<li onClick="location.href='sub2_01.html?MM=2'"><a href="sub2_01.html?MM=2">ALL</a></li>
+								<li onClick="location.href='sub2_01.html?MM=2&SM=0'"><a href="sub2_01.html?MM=2&SM=0">BRUSH</a></li>
+								<li onClick="location.href='sub2_01.html?MM=2&SM=1'"><a href="sub2_01.html?MM=2&SM=1">TWEEZERS</a></li>
+								<li onClick="location.href='sub2_01.html?MM=2&SM=2'"><a href="sub2_01.html?MM=2&SM=2">TOOLS</a></li>
+								<li onClick="location.href='sub2_01.html?MM=2&SM=3'"><a href="sub2_01.html?MM=2&SM=3">MAKE UP BAGS</a></li>
+								<li onClick="location.href='sub2_01.html?MM=2&SM=4'"><a href="sub2_01.html?MM=2&SM=4">TAPES</a></li>
+							</ul>
+						</li>
+						<li>
+							<a onClick="location.href='sub2_01.html?MM=3&SM=0'">COSMETICS</a>
+						</li>
+						<li>
+							<a onClick="location.href='sub2_01.html?MM=4&SM=0'">KIT</a>
+						</li>
+					</ul>
+				</li>
+				<!--cosmetics end-->
+				<li>
+					<a onClick="location.href='sub4_01.html'"> <span class="title">NEWS&EVENT</span></a>
+				</li>
+				<!--new end-->
+				<li>
+					<a onClick="location.href='sub5_01.html'">
+						<span class="title">CONTACT</span>
+					</a>
+				</li>
+				<li class="last resp_hide" id="open_search_box">
+					<a href=""><span class="title"><img src="images/main/zoom.png"/></span></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+<!-- End of Responsive Menu -->
+</header>
+<article id="total_search_box">
+	<div class="total_search_row center_align">
+		<div class="total_search_item">
+			<input type="text" class="bbs_input" id="total_serach_input" />
+			<i class="fas fa-search fa-3x" id="search_product"></i>
+			<i class="fas fa-times fa-3x" id="close_search_box"></i>
+		</div>
+	</div>
+</article>
+<script type="text/javascript">
+	function productTotalSearch() {
+		//var sT = $(".search|_list").val();
+		var tV = $("#total_serach_input").val();
+		var URI = '?';
+
+		location.href="total_search.html"+URI+'&tValue='+tV;
+		//location.href=URI+'&searchType='+sT+'&tValue='+tV;
+	}
+	$(window).scroll(function(event){
+		var op = $('.home-menu');
+		if($(this).scrollTop() >= 200) op.removeClass("opa_1");
+		else op.addClass('opa_1');
+	});
+	$(document).ready(function(){
+		/* SEARCH-BOX OPEN */
+		$('#open_search_box, #mobile_open_search_box').click(function(){
+			$('#total_search_box').css({
+				'visibility': 'visible',
+				'opacity': 1,
+				'z-index': 999
+			});
+		});
+		/* SEARCH-BOX CLOSE */
+		$('#close_search_box').click(function(){
+			$('#total_serach_input').val("");
+			$('#total_search_box').css({
+				'visibility': 'hidden',
+				'opacity': 0,
+				'z-index': -1
+			});
+		});
+		$("#search_product").click(function(){
+			productTotalSearch();
+		});
+		
+		$("#total_serach_input").keypress(function(e){
+			if(e.keyCode == 13){
+				productTotalSearch();
+			}
+		});
+	});
+</script><section class="sub_wrap">
+	<h1 class="product_page_title">NEW PRODUCT</h1>
+	<!--p><img src="images/sub/ribon.png"/></p-->
+	<nav class="lnb_nav_1">
+	<ul class="pure-g">
+		<li class="pure-u-1-6">
+			<a href="sub2.html">NEW PRODUCT</a>
+		</li>
+				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=0">EYELASH</a>
+						<ul class="sub_dropmenu sub_drop_1">
+				<li><a href="sub2_01.html?MM=0">ALL</a></li>
+								<li><a href="sub2_01.html?MM=0&SM=0">TRAY LASH</a></li>
+								<li><a href="sub2_01.html?MM=0&SM=1">BULK LASH</a></li>
+								<li><a href="sub2_01.html?MM=0&SM=2">STRIP LASH</a></li>
+								<li><a href="sub2_01.html?MM=0&SM=3">INDIVIDUAL LASH</a></li>
+							</ul>
+					</li>
+				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=1">ADHESIVE & REMOVER</a>
+						<ul class="sub_dropmenu sub_drop_2">
+				<li><a href="sub2_01.html?MM=1">ALL</a></li>
+								<li><a href="sub2_01.html?MM=1&SM=0">GLUE ODOR NEUTRALIZER</a></li>
+								<li><a href="sub2_01.html?MM=1&SM=1">REMOVER</a></li>
+								<li><a href="sub2_01.html?MM=1&SM=2">CLEANSER & PRIMER</a></li>
+								<li><a href="sub2_01.html?MM=1&SM=3">ADHESIVE</a></li>
+							</ul>
+					</li>
+				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=2">APPLICATION TOOLS</a>
+						<ul class="sub_dropmenu sub_drop_3">
+				<li><a href="sub2_01.html?MM=2">ALL</a></li>
+								<li><a href="sub2_01.html?MM=2&SM=0">BRUSH</a></li>
+								<li><a href="sub2_01.html?MM=2&SM=1">TWEEZERS</a></li>
+								<li><a href="sub2_01.html?MM=2&SM=2">TOOLS</a></li>
+								<li><a href="sub2_01.html?MM=2&SM=3">MAKE UP BAGS</a></li>
+								<li><a href="sub2_01.html?MM=2&SM=4">TAPES</a></li>
+							</ul>
+					</li>
+				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=3&SM=0">COSMETICS</a>
+					</li>
+				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=4&SM=0">KIT</a>
+					</li>
+			</ul> 
+</nav>
+
+<div class="accordion_menu">
+	<div class="center_align"><a href="sub2.html" style="color:inherit; text-decoration:none; display:block;">NEW PRODUCT</a></div>
+		<div class="accordion_title center_align">EYELASH</div>
+	<ul class="accordion_sub">
+		<li class="center_align" onClick="location.href='sub2_01.html?MM=0'"><a href="sub2_01.html?MM=0">ALL</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=0&SM=0'"><a href="sub2_01.html?MM=0&SM=0">TRAY LASH</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=0&SM=1'"><a href="sub2_01.html?MM=0&SM=1">BULK LASH</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=0&SM=2'"><a href="sub2_01.html?MM=0&SM=2">STRIP LASH</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=0&SM=3'"><a href="sub2_01.html?MM=0&SM=3">INDIVIDUAL LASH</a></li>
+			</ul>
+		<div class="accordion_title center_align">ADHESIVE & REMOVER</div>
+	<ul class="accordion_sub">
+		<li class="center_align" onClick="location.href='sub2_01.html?MM=1'"><a href="sub2_01.html?MM=1">ALL</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=1&SM=0'"><a href="sub2_01.html?MM=1&SM=0">GLUE ODOR NEUTRALIZER</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=1&SM=1'"><a href="sub2_01.html?MM=1&SM=1">REMOVER</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=1&SM=2'"><a href="sub2_01.html?MM=1&SM=2">CLEANSER & PRIMER</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=1&SM=3'"><a href="sub2_01.html?MM=1&SM=3">ADHESIVE</a></li>
+			</ul>
+		<div class="accordion_title center_align">APPLICATION TOOLS</div>
+	<ul class="accordion_sub">
+		<li class="center_align" onClick="location.href='sub2_01.html?MM=2'"><a href="sub2_01.html?MM=2">ALL</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=2&SM=0'"><a href="sub2_01.html?MM=2&SM=0">BRUSH</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=2&SM=1'"><a href="sub2_01.html?MM=2&SM=1">TWEEZERS</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=2&SM=2'"><a href="sub2_01.html?MM=2&SM=2">TOOLS</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=2&SM=3'"><a href="sub2_01.html?MM=2&SM=3">MAKE UP BAGS</a></li>
+				<li class="center_align" onClick="location.href='sub2_01.html?MM=2&SM=4'"><a href="sub2_01.html?MM=2&SM=4">TAPES</a></li>
+			</ul>
+		<div class="center_align"><a href="sub2_01.html?MM=3&SM=0" style="color:inherit; text-decoration:none; display:block;">COSMETICS</a></div>
+		<div class="center_align"><a href="sub2_01.html?MM=4&SM=0" style="color:inherit; text-decoration:none; display:block;">KIT</a></div>
+	</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".accordion_menu .accordion_title").click(function() {
+			if($(this).next("ul").is(":visible")){
+				$(this).next("ul").slideUp("fast");
+			} else {
+				$(".accordion_menu .accordion_sub").slideUp("fast");
+				$(this).next("ul").slideToggle("fast");
+			}
+		});
+	});
+</script> 	
+<div class="sub_product_wrap pure-g">
+	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
+		<img src="upload/product/thum/1581316329ekwxfdacpw.jpg" class="pure-img" data-src1="upload/product/thum/1581316329ekwxfdacpw.jpg" data-src2="upload/product/thum/1581316329ekwxfdacpwzhlazvpdma.jpg">
+		<div class="product_txt">		
+			<h4>DOUBLE VELVET</h4>	
+		</div>
+	</div>
+
+	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
+		<img src="upload/product/thum/1581315602hqqguvhvzp.jpg" class="pure-img" data-src1="upload/product/thum/1581315602hqqguvhvzp.jpg" data-src2="upload/product/thum/1581315602hqqguvhvzpvwkuccduov.jpg">
+		<div class="product_txt">		
+			<h4>GLAM VOLUME MASCARA</h4>	
+		</div>
+	</div>
+
+	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
+		<img src="upload/product/thum/1581315560roydfbbdiz.jpg" class="pure-img" data-src1="upload/product/thum/1581315560roydfbbdiz.jpg" data-src2="upload/product/thum/1581315560roydfbbdizxuygsjrlrc.jpg">	
+		<div class="product_txt">		
+			<h4>IMPRESS VOLUME MASCARA</h4>	
+		</div>
+	</div>
+</div>
+<!-- <button class="btn-load">More</button> -->
+</section>
+<script type="text/javascript">
+	var page = 1;
+	var mm = '';
+	var sm = '';
+
+	
+	// function contentView(bkey){
+	// 	var URI = '?';
+
+	// 	//location.href=URI+"&bkey="+bkey;
+	// 	location.href="new_product.html"+URI+"&bkey="+bkey;
+	// }
+
+	$(document).ready(function () {
+		$("div.home-menu").addClass("opa_1");
+		$(".sub_dropmenu").hide().css("height","0");
+		$(".sub_li").hover(function(){
+			$(this).children(".sub_dropmenu").stop().animate({"height":"265px"},200).show();
+		},function(){
+			$(this).children(".sub_dropmenu").hide().css("height","0");
+		});
+
+		
+	});
+
+	$(window).scroll(function(event){
+		/* LOAD BTN */
+		var objectHeight = document.documentElement.scrollHeight;
+		var winHeight = $(window).height();
+		var scrollHeight = $(document).scrollTop();
+
+		if(objectHeight == (winHeight+scrollHeight)){
+			var tNextbar = $(".btn-load").text();
+			if(tNextbar.length < 5 ){
+				getNewProduct();
+			}
+		}
+	});
+</script>
+<div class="to_top">
+	<img src="images/main/totop.png"/>
+</div>
+<footer class="main_footer">
+	<div class="pure-g bottom_wrap">
+		<div class="bottm_box">
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2.html'">NEW PRODUCT</div>
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2_01.html?MM=0'">EYELASH</div>
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2_01.html?MM=1'">ADHESIVE & REMOVER</div>
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2_01.html?MM=2'">APPLICATION TOOLS</div>
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2_01.html?MM=3&SM=0'">COSMETICS</div>
+			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2_01.html?MM=4&SM=0'">KIT</div>
+		</div>
+	</div>
+	<div>
+		<img src="images/main/logo_f.png"/>
+		<div class="sns_wrap">
+			<a href="https://www.youtube.com/watch?v=-xC9-mWUZAU" target="_blank"><img src="images/main/ytub_icon.png"/></a>
+			<a href="https://www.instagram.com/neicha.official/" target="_blank"><img src="images/main/inst_icon.png" /></a>
+		</div>
+		<p>Email : neicha@hschemical.kr</p>
+		<!--
+		<p class="p_addr">Address : 1ST FLOOR, 168, YONGHYEON-RO, UIJEONGBU-SI, GYEONGGI-DO, 11808 REPUBLIC OF KOREA<br/>Tel : +82-31-855-9488&emsp;&emsp;Fax : +82-31-855-9588</p>
+		<p class="m_addr">Address : 1ST FLOOR, 168, YONGHYEON-RO,<br/> UIJEONGBU-SI, GYEONGGI-DO, <br/>11808 REPUBLIC OF KOREA<br/>Tel : +82-31-855-9488<br/>Fax : +82-31-855-9588</p>
+		-->
+		<p class="p_addr">Address : 39, SANDAN-RO 68-GIL, UIJEONGBU-SI, GYEONGGI-DO, 11781 REPUBLIC OF KOREA<br/>Tel : +82-31-871-2267&emsp;&emsp;Fax : +82-31-848-2267</p>
+		<p class="m_addr">Address : 39, SANDAN-RO 68-GIL,<br/> UIJEONGBU-SI, GYEONGGI-DO, <br/>11781 REPUBLIC OF KOREA<br/>Tel : +82-31-871-2267<br/>Fax : +82-31-848-2267</p>
+		<p></p>
+		<p class="copyright_txt">ⓒ COPYRIGHT NEICHA ALL RIGHTS RESERVED.<a href="admin">&nbsp;&nbsp;</a>&emsp;&emsp;<a href="http://www.500bill.co.kr/" target="_blank">Design by OASIS</a></p>
+	</div>
+</footer>
+<script type="text/javascript">
+	$(window).scroll(function() {
+	  var el = $('.to_top');
+	  
+	  if($(this).scrollTop() >= 400) el.addClass('shown');
+	  else el.removeClass('shown');
+	});
+	 $(document).ready(function () {
+		 $("#respMenu").aceResponsiveMenu({
+			 resizeWidth: '768', // Set the same in Media query       
+			 animationSpeed: 'fast', //slow, medium, fast
+			 accoridonExpAll: false //Expands all the accordion menu on click
+		 });
+		 $("div.to_top").click(function(){
+			 $("html").stop().animate({scrollTop: 0}, 500);
+		 });
+		 $(function(){
+			 var subMargin = $("div.home-menu").css("height");
+			 $("section.sub_wrap, .product_box").css("padding-top", 0);
+			 $("section.pro_info_wrap").css("padding-top", 0);
+		 });
+	 });
+		
+	</script>
+</body>
+</html>
