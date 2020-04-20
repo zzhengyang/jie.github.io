@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,6 +47,9 @@
 		<!-- Menu Toggle btn-->
 			<div class="menu-toggle">
 				<h3><img src="images/main/logo.png" class="pure-img-responsive" onClick="javascript:location.href='index.html'"/></h3>
+				<button type="button" id="mobile_open_search_box" style="float: right; background: #202020; border: 1px solid #0C0C0C; padding: 6px; border-radius: 5px; cursor: pointer; margin: 10px;">
+					<span class="title"><img src="images/main/zoom.png"/></span>
+				</button>
 				<button type="button" id="menu-btn">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -143,7 +145,7 @@
 	function productTotalSearch() {
 		//var sT = $(".search|_list").val();
 		var tV = $("#total_serach_input").val();
-		var URI = '?';
+		var URI = '?go=third';
 
 		location.href="total_search.html"+URI+'&tValue='+tV;
 		//location.href=URI+'&searchType='+sT+'&tValue='+tV;
@@ -181,159 +183,29 @@
 			}
 		});
 	});
-</script><section class="sub_wrap">
-	<h1 class="product_page_title">NEW PRODUCT</h1>
-	<!--p><img src="images/sub/ribon.png"/></p-->
-	<nav class="lnb_nav_1">
-	<ul class="pure-g">
-		<li class="pure-u-1-6">
-			<a href="sub2.html">NEW PRODUCT</a>
-		</li>
-				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=0">EYELASH</a>
-						<ul class="sub_dropmenu sub_drop_1">
-				<li><a href="sub2_01.html?MM=0">ALL</a></li>
-								<li><a href="sub2_01.html?MM=0&SM=0">TRAY LASH</a></li>
-								<li><a href="sub2_01.html?MM=0&SM=1">BULK LASH</a></li>
-								<li><a href="sub2_01.html?MM=0&SM=2">STRIP LASH</a></li>
-								<li><a href="sub2_01.html?MM=0&SM=3">INDIVIDUAL LASH</a></li>
-							</ul>
-					</li>
-				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=1">ADHESIVE & REMOVER</a>
-						<ul class="sub_dropmenu sub_drop_2">
-				<li><a href="sub2_01.html?MM=1">ALL</a></li>
-								<li><a href="sub2_01.html?MM=1&SM=0">GLUE ODOR NEUTRALIZER</a></li>
-								<li><a href="sub2_01.html?MM=1&SM=1">REMOVER</a></li>
-								<li><a href="sub2_01.html?MM=1&SM=2">CLEANSER & PRIMER</a></li>
-								<li><a href="sub2_01.html?MM=1&SM=3">ADHESIVE</a></li>
-							</ul>
-					</li>
-				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=2">APPLICATION TOOLS</a>
-						<ul class="sub_dropmenu sub_drop_3">
-				<li><a href="sub2_01.html?MM=2">ALL</a></li>
-								<li><a href="sub2_01.html?MM=2&SM=0">BRUSH</a></li>
-								<li><a href="sub2_01.html?MM=2&SM=1">TWEEZERS</a></li>
-								<li><a href="sub2_01.html?MM=2&SM=2">TOOLS</a></li>
-								<li><a href="sub2_01.html?MM=2&SM=3">MAKE UP BAGS</a></li>
-								<li><a href="sub2_01.html?MM=2&SM=4">TAPES</a></li>
-							</ul>
-					</li>
-				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=3&SM=0">COSMETICS</a>
-					</li>
-				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=4&SM=0">KIT</a>
-					</li>
-			</ul> 
-</nav>
-
-<div class="accordion_menu">
-	<div class="center_align"><a href="sub2.html" style="color:inherit; text-decoration:none; display:block;">NEW PRODUCT</a></div>
-		<div class="accordion_title center_align">EYELASH</div>
-	<ul class="accordion_sub">
-		<li class="center_align" onClick="location.href='sub2_01.html?MM=0'"><a href="sub2_01.html?MM=0">ALL</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=0&SM=0'"><a href="sub2_01.html?MM=0&SM=0">TRAY LASH</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=0&SM=1'"><a href="sub2_01.html?MM=0&SM=1">BULK LASH</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=0&SM=2'"><a href="sub2_01.html?MM=0&SM=2">STRIP LASH</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=0&SM=3'"><a href="sub2_01.html?MM=0&SM=3">INDIVIDUAL LASH</a></li>
-			</ul>
-		<div class="accordion_title center_align">ADHESIVE & REMOVER</div>
-	<ul class="accordion_sub">
-		<li class="center_align" onClick="location.href='sub2_01.html?MM=1'"><a href="sub2_01.html?MM=1">ALL</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=1&SM=0'"><a href="sub2_01.html?MM=1&SM=0">GLUE ODOR NEUTRALIZER</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=1&SM=1'"><a href="sub2_01.html?MM=1&SM=1">REMOVER</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=1&SM=2'"><a href="sub2_01.html?MM=1&SM=2">CLEANSER & PRIMER</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=1&SM=3'"><a href="sub2_01.html?MM=1&SM=3">ADHESIVE</a></li>
-			</ul>
-		<div class="accordion_title center_align">APPLICATION TOOLS</div>
-	<ul class="accordion_sub">
-		<li class="center_align" onClick="location.href='sub2_01.html?MM=2'"><a href="sub2_01.html?MM=2">ALL</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=2&SM=0'"><a href="sub2_01.html?MM=2&SM=0">BRUSH</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=2&SM=1'"><a href="sub2_01.html?MM=2&SM=1">TWEEZERS</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=2&SM=2'"><a href="sub2_01.html?MM=2&SM=2">TOOLS</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=2&SM=3'"><a href="sub2_01.html?MM=2&SM=3">MAKE UP BAGS</a></li>
-				<li class="center_align" onClick="location.href='sub2_01.html?MM=2&SM=4'"><a href="sub2_01.html?MM=2&SM=4">TAPES</a></li>
-			</ul>
-		<div class="center_align"><a href="sub2_01.html?MM=3&SM=0" style="color:inherit; text-decoration:none; display:block;">COSMETICS</a></div>
-		<div class="center_align"><a href="sub2_01.html?MM=4&SM=0" style="color:inherit; text-decoration:none; display:block;">KIT</a></div>
-	</div>
-
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(".accordion_menu .accordion_title").click(function() {
-			if($(this).next("ul").is(":visible")){
-				$(this).next("ul").slideUp("fast");
-			} else {
-				$(".accordion_menu .accordion_sub").slideUp("fast");
-				$(this).next("ul").slideToggle("fast");
-			}
-		});
-	});
-</script> 	
-<div class="sub_product_wrap pure-g">
-	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
-		<img src="upload/product/thum/1581316329ekwxfdacpw.jpg" class="pure-img" data-src1="upload/product/thum/1581316329ekwxfdacpw.jpg" data-src2="upload/product/thum/1581316329ekwxfdacpwzhlazvpdma.jpg">
-		<div class="product_txt">		
-			<h4>DOUBLE VELVET</h4>	
+</script>	<ul id="menu">
+		<li data-menuanchor="NEICHA" class="active"><a href="#section0">TBS-LASHES</a></li>
+		<li data-menuanchor="CEO's MESSAGE"><a href="#section1">CEO's MESSAGE</a></li>
+	</ul>
+	<section id="fullpage">
+		<div class="section " id="brand_section0">
+			<div class="section_container">
+				<h1><span id="section_text01"></span></h1>
+				<img src="images/sub/rose.png" class="rose_logo" />
+				<p class="introduce_neicha">Bloom individual flowers on your eyes with TBS-LASHES</p>
+			</div>
 		</div>
-	</div>
 
-	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
-		<img src="upload/product/thum/1581315602hqqguvhvzp.jpg" class="pure-img" data-src1="upload/product/thum/1581315602hqqguvhvzp.jpg" data-src2="upload/product/thum/1581315602hqqguvhvzpvwkuccduov.jpg">
-		<div class="product_txt">		
-			<h4>GLAM VOLUME MASCARA</h4>	
+		<div class="section" id="brand_section1">
+			<div class="section_container">
+				<h1><span id="section_text02"></span></h1>
+				<img src="images/sub/rose.png" class="rose_logo" />
+				<p>We produce the highest quality of eye beauty products under the most advanced technology and strict management control, using only the finest raw materials we offer the world’s largest inventory of synthetic eyelashes, eyelash extension adhesives and application tools.<br />
+				Create your gorgeous eyes with TBS-LASHES.<br />
+				CEO : Александр</p>
+			</div>
 		</div>
-	</div>
-
-	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
-		<img src="upload/product/thum/1581315560roydfbbdiz.jpg" class="pure-img" data-src1="upload/product/thum/1581315560roydfbbdiz.jpg" data-src2="upload/product/thum/1581315560roydfbbdizxuygsjrlrc.jpg">	
-		<div class="product_txt">		
-			<h4>IMPRESS VOLUME MASCARA</h4>	
-		</div>
-	</div>
-</div>
-<!-- <button class="btn-load">More</button> -->
-</section>
-<script type="text/javascript">
-	var page = 1;
-	var mm = '';
-	var sm = '';
-
-	
-	// function contentView(bkey){
-	// 	var URI = '?';
-
-	// 	//location.href=URI+"&bkey="+bkey;
-	// 	location.href="new_product.html"+URI+"&bkey="+bkey;
-	// }
-
-	$(document).ready(function () {
-		$("div.home-menu").addClass("opa_1");
-		$(".sub_dropmenu").hide().css("height","0");
-		$(".sub_li").hover(function(){
-			$(this).children(".sub_dropmenu").stop().animate({"height":"265px"},200).show();
-		},function(){
-			$(this).children(".sub_dropmenu").hide().css("height","0");
-		});
-
-		
-	});
-
-	$(window).scroll(function(event){
-		/* LOAD BTN */
-		var objectHeight = document.documentElement.scrollHeight;
-		var winHeight = $(window).height();
-		var scrollHeight = $(document).scrollTop();
-
-		if(objectHeight == (winHeight+scrollHeight)){
-			var tNextbar = $(".btn-load").text();
-			if(tNextbar.length < 5 ){
-				getNewProduct();
-			}
-		}
-	});
-</script>
-<div class="to_top">
-	<img src="images/main/totop.png"/>
-</div>
-<footer class="main_footer">
+		<footer class="main_footer section fp-auto-height">
 	<div class="pure-g bottom_wrap">
 		<div class="bottm_box">
 			<div class="pure-u-1-3 pure-u-md-1-3 pure-u-lg-1-6 menu_bottom" onClick="location.href='sub2.html'">NEW PRODUCT</div>
@@ -348,8 +220,8 @@
 		<img src="images/main/logo_f.png"/>
 		<p>Email : tbs-eyelashes@mail.ru</p>
 		<!--
-		<p class="p_addr">Address : 1ST FLOOR, 168, YONGHYEON-RO, UIJEONGBU-SI, GYEONGGI-DO, 11808 REPUBLIC OF KOREA<br/>Tel : +82-31-855-9488&emsp;&emsp;Fax : +82-31-855-9588</p>
-		<p class="m_addr">Address : 1ST FLOOR, 168, YONGHYEON-RO,<br/> UIJEONGBU-SI, GYEONGGI-DO, <br/>11808 REPUBLIC OF KOREA<br/>Tel : +82-31-855-9488<br/>Fax : +82-31-855-9588</p>
+		<p class="p_addr">Address : 1ST FLOOR, 168, YONGHYEON-RO, UIJEONGBU-SI, GYEONGGI-DO, 11808 REPUBLIC OF KOREA</p>
+		<p class="m_addr">Address : 1ST FLOOR, 168, YONGHYEON-RO,<br/> UIJEONGBU-SI, GYEONGGI-DO, <br/>11808 REPUBLIC OF KOREA</p>
 		-->
 		<p class="p_addr">Address : Danshan industrial Park. Chengyang District, Qingdao City.<br/>Tel : +86-18611530340&emsp;&emsp;</p>
 		<p class="m_addr">Address : Danshan industrial Park,<br/> Chengyang District, Qingdao City.<br/>Tel : +86-18611530340</p>
@@ -358,28 +230,125 @@
 	</div>
 </footer>
 <script type="text/javascript">
-	$(window).scroll(function() {
-	  var el = $('.to_top');
-	  
-	  if($(this).scrollTop() >= 400) el.addClass('shown');
-	  else el.removeClass('shown');
+	$(document).ready(function(){
+		$("#respMenu").aceResponsiveMenu({
+			resizeWidth: '768', // Set the same in Media query       
+			animationSpeed: 'fast', //slow, medium, fast
+			accoridonExpAll: false //Expands all the accordion menu on click
+		});
+		$("div.to_top").click(function(){
+			$("html").stop().animate({scrollTop: 0}, 500);
+		});
+		$(function() {
+			var Page = (function() {
+				var $navArrows = $( '#nav-arrows' ),
+					$nav = $( '#nav-dots > span' ),
+					slitslider = $( '#slider' ).slitslider( {
+						onBeforeChange : function( slide, pos ) {
+							$nav.removeClass( 'nav-dot-current' );
+							$nav.eq( pos ).addClass( 'nav-dot-current' );
+						}
+					} ),
+					init = function() {
+						initEvents();
+					},
+					initEvents = function() {
+						// add navigation events
+						$navArrows.children( ':last' ).on( 'click', function() {
+							slitslider.next();
+							return false;
+						} );
+						$navArrows.children( ':first' ).on( 'click', function() {
+							slitslider.previous();
+							return false;
+						} );
+						$nav.each( function( i ) {
+							$( this ).on( 'click', function( event ) {
+								var $dot = $( this );
+								if( !slitslider.isActive() ) {
+									$nav.removeClass( 'nav-dot-current' );
+									$dot.addClass( 'nav-dot-current' );
+								}
+								slitslider.jump( i + 1 );
+								return false;
+							} );
+						} );
+					};
+					return { init : init };
+				})();
+			Page.init();
+		});
 	});
-	 $(document).ready(function () {
-		 $("#respMenu").aceResponsiveMenu({
-			 resizeWidth: '768', // Set the same in Media query       
-			 animationSpeed: 'fast', //slow, medium, fast
-			 accoridonExpAll: false //Expands all the accordion menu on click
-		 });
-		 $("div.to_top").click(function(){
-			 $("html").stop().animate({scrollTop: 0}, 500);
-		 });
-		 $(function(){
-			 var subMargin = $("div.home-menu").css("height");
-			 $("section.sub_wrap, .product_box").css("padding-top", 0);
-			 $("section.pro_info_wrap").css("padding-top", 0);
-		 });
-	 });
-		
+</script>	</section>
+
+	<script src="asset/js/typed.min.js"></script>
+	<script type="text/javascript">
+		var focus='third';
+		var moveIdx = 1;
+		var typed = undefined;
+
+		function resetTyped (typed_target, newTexts) {
+			if (newTexts === undefined) {
+				return false;
+			}
+			var strings = newTexts.split(',');
+
+			if(typed && typed.constructor === Typed) {
+				typed.destroy();
+			}
+			typed = new Typed(typed_target, {
+				strings: strings,
+				typeSpeed: 80,
+				loop: false,
+				backSpeed: 80,
+				showCursor: false
+			});
+		}
+
+		$(window).scroll(function() {
+			var el = $('.to_top');
+			if($(this).scrollTop() >= 400) el.addClass('shown');
+			else el.removeClass('shown');
+		});
+		$(document).ready(function () {
+			$('#fullpage').fullpage({
+				menu: '#menu',
+				responsiveHeight: 600,
+				anchors: ['TBS-LASHES', 'CEO\'s MESSAGE'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['TBS-LASHES', 'CEO\'s MESSAGE'],
+				showActiveTooltip: true,
+				scrollingSpeed: 1000,
+				onLeave: function(index, nextIndex, direction){
+					$('.rose_logo').removeClass('active');
+					$('.section').find('p').removeClass('active');
+				},
+				afterLoad: function(anchorLink, index){
+					if(index != 1) {
+						$('.home-menu').removeClass("opa_1");
+					} else {
+						$('.home-menu').addClass("opa_1");
+					}
+					if(index != 5 ){
+						var $targetElement = $('.section').eq(index-1);
+						$targetElement.find('.rose_logo').addClass('active');
+						$targetElement.find('p').
+						addClass('active');
+						var $target = "#section_text0"+index;
+						resetTyped($target, anchorLink);
+					}
+				}
+			});
+
+			switch(focus) {
+				case 'first': moveIdx = 1; break;
+				case 'second': moveIdx = 3; break;
+				case 'third': moveIdx = 4; break;
+				default : moveIdx = 1; break;
+			}
+			$.fn.fullpage.moveTo(moveIdx);
+		});
 	</script>
 </body>
 </html>
