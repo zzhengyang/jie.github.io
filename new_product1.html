@@ -48,6 +48,9 @@
 		<!-- Menu Toggle btn-->
 			<div class="menu-toggle">
 				<h3><img src="images/main/logo.png" class="pure-img-responsive" onClick="javascript:location.href='index.html'"/></h3>
+				<button type="button" id="mobile_open_search_box" style="float: right; background: #202020; border: 1px solid #0C0C0C; padding: 6px; border-radius: 5px; cursor: pointer; margin: 10px;">
+					<span class="title"><img src="images/main/zoom.png"/></span>
+				</button>
 				<button type="button" id="menu-btn">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -74,8 +77,8 @@
 							<!-- Level three-->
 							<ul>
 								<li onClick="location.href='sub2_01.html?MM=0'"><a href="sub2_01.html?MM=0">TRAY LASH</a></li>
-								<li onClick="location.href='sub2_03.html?MM=0&SM=2'"><a href="sub2_01.html?MM=0&SM=2">STRIP LASH</a></li>
-								<li onClick="location.href='sub2_04.html?MM=0&SM=3'"><a href="sub2_01.html?MM=0&SM=3">INDIVIDUAL LASH</a></li>
+								<li onClick="location.href='sub2_03.html?MM=0&SM=2'"><a href="sub2_03.html?MM=0&SM=2">STRIP LASH</a></li>
+								<li onClick="location.href='sub2_04.html?MM=0&SM=3'"><a href="sub2_04.html?MM=0&SM=3">INDIVIDUAL LASH</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -90,7 +93,7 @@
 					<a class="contact">
 						<span class="title">CONTACT</span>
 					</a>
-				</li>				
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -108,7 +111,7 @@
 <script type="text/javascript">
 	$("a.contact").click(function(){
 			$("html").stop().animate({scrollTop: $(document).height()}, 500);
-	});	
+	});
 	function productTotalSearch() {
 		//var sT = $(".search|_list").val();
 		var tV = $("#total_serach_input").val();
@@ -150,99 +153,170 @@
 			}
 		});
 	});
-</script><section class="sub_wrap">
-	<h1 class="product_page_title">EYELASH</h1>
-	<!--p><img src="images/sub/ribon.png"/></p-->
-	<nav class="lnb_nav_1">
-	<ul class="pure-g">
-		<li class="pure-u-1-6">
-			<a href="sub2.html">NEW PRODUCT</a>
-		</li>
-				<li class="pure-u-1-6 sub_li"><a href="sub2_01.html?MM=0">EYELASH</a>
-						<ul class="sub_dropmenu sub_drop_1">
-								<li><a href="sub2_01.html?MM=0">TRAY LASH</a></li>
-								<li><a href="sub2_03.html?MM=0&SM=2">STRIP LASH</a></li>
-								<li><a href="sub2_04.html?MM=0&SM=3">INDIVIDUAL LASH</a></li>
-							</ul>
-					</li>
-			</ul> 
-</nav>
-
-<div class="accordion_menu">
-	<div class="center_align"><a href="sub2.html" style="color:inherit; text-decoration:none; display:block;">NEW PRODUCT</a></div>
-		<div class="accordion_title center_align">EYELASH</div>
-	<ul class="accordion_sub">
-		<li class="center_align" onClick="location.href='sub2_01.html?MM=0'"><a href="sub2_01.html?MM=0">ALL</a></li>
-				<li class="center_align" onClick="location.href='sub2_02.html?MM=0&SM=0'"><a href="sub2_02.html?MM=0&SM=0">TRAY LASH</a></li>
-				<li class="center_align" onClick="location.href='sub2_03.html?MM=0&SM=2'"><a href="sub2_03.html?MM=0&SM=2">STRIP LASH</a></li>
-				<li class="center_align" onClick="location.href='sub2_04.html?MM=0&SM=3'"><a href="sub2_04.html?MM=0&SM=3">INDIVIDUAL LASH</a></li>
-			</ul>
-	</div>
-
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(".accordion_menu .accordion_title").click(function() {
-			if($(this).next("ul").is(":visible")){
-				$(this).next("ul").slideUp("fast");
-			} else {
-				$(".accordion_menu .accordion_sub").slideUp("fast");
-				$(this).next("ul").slideToggle("fast");
-			}
-		});
-	});
-</script> 	
-<div class="sub_product_wrap pure-g">
-	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
-		<img src="upload/product/thum/tray1.jpg" class="pure-img" data-src1="upload/product/thum/tray1.jpg" data-src2="upload/product/thum/tray1.jpg" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">	<div class="product_txt" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">			
+</script><section class="product_box">
+<div class="pure-g product_container">
+		<div class="pure-u-1 pure-u-md-1 pure-u-lg-2-5 center_align product_item product_image"><img src="upload/product/thum/1581316329ekwxfdacpw.jpg"></div>
+		<div class="pure-u-1 pure-u-md-1 pure-u-lg-3-5 product_item product_description">
+			<h2>DOUBLE VELVET</h2>
+			<img src="images/sub/rose.png">
+			<p>16 Lines<br>
+Curl : B, C, CC, D, J, I, L, L+, M, U<br>
+Thickness : 0.07, 0.1, 0.15, 0.2<br>
+Length : 8~15mm<br>
+Mix : 8~14mm<br>
+<br>
+2 good 2 be true!<br>
+Twice softer than regular eyelashes, allows more voluminous look!<br>
+Twice wider surface on which you apply the glue,<br>
+eases the eyelash extension procedure!</p>
 		</div>
-	</div>
-
-	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
-		<img src="upload/product/thum/tray2.jpg" class="pure-img" data-src1="upload/product/thum/tray1.jpg" data-src2="upload/product/thum/tray1.jpg" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">	<div class="product_txt" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">			
+		<!--div class="pure-u-1 center_align"><img src="images/sub/ribon.png"/></div-->
+		<div class="pure-u-1 center_align product_item product_contents"><img alt="" src="ck_upload/new_pro1.jpg" style="width: 1418px; height: 370px;"></div>
+		<div class="pure-u-1 product_item product_pag_box">
+			<img src="images/sub/sub_arr_l.png" class="pure-img arr_l btn_move_product" onmouseover="this.src='images/sub/sub_arr_l_h.png'" onmouseout="this.src='images/sub/sub_arr_l.png'" id="product_before" onclick="javascript:window.location.href='new_product3.html'" style="">
+			<img src="images/sub/sub_arr_r.png" class="pure-img arr_r btn_move_product" onmouseover="this.src='images/sub/sub_arr_r_h.png'" onmouseout="this.src='images/sub/sub_arr_r.png'" id="product_after" onclick="javascript:window.location.href='new_product2.html'" style="">
 		</div>
+		<article class="pure-u-1 product_item pro_btn_box right_align">
+			<button class="default_btn" onclick="javascript:location.href='sub2.html?';">List</button>
+		</article>
 	</div>
-
-	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
-		<img src="upload/product/thum/tray3.jpg" class="pure-img" data-src1="upload/product/thum/tray1.jpg" data-src2="upload/product/thum/tray1.jpg" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">	<div class="product_txt" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">			
-		</div>
-	</div>	
-
-	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
-		<img src="upload/product/thum/tray4.jpg" class="pure-img" data-src1="upload/product/thum/tray1.jpg" data-src2="upload/product/thum/tray1.jpg" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">	<div class="product_txt" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">			
-		</div>
-	</div>
-
-	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
-		<img src="upload/product/thum/tray5.jpg" class="pure-img" data-src1="upload/product/thum/tray1.jpg" data-src2="upload/product/thum/tray1.jpg" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">	<div class="product_txt" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">			
-		</div>
-	</div>
-
-	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
-		<img src="upload/product/thum/tray6.jpg" class="pure-img" data-src1="upload/product/thum/tray1.jpg" data-src2="upload/product/thum/tray1.jpg" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">	<div class="product_txt" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">			
-		</div>
-	</div>
-
-	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-3 product_box">	
-		<img src="upload/product/thum/tray7.jpg" class="pure-img" data-src1="upload/product/thum/tray1.jpg" data-src2="upload/product/thum/tray1.jpg" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">	<div class="product_txt" onclick="javascript:contentView('f5442e251d94129ecbbe8715d194aea6')">			
-		</div>
-	</div>
-
-
-</div>
-<!-- <button class="btn-load">More</button> -->
 </section>
 <script type="text/javascript">
-	var page = 1;
+	var page = parseInt('');
+	var searchType = '';
 	var mm = '';
 	var sm = '';
+	if(page == "" || !page){
+		page = 1;
+	}
 
-	
-	// function contentView(bkey){
-	// 	var URI = '?';
+	var bkey = '9f52511614e4d21fb860828fb9220e9b';
+	var searchType = '';
 
-	// 	//location.href=URI+"&bkey="+bkey;
-	// 	location.href="new_product.html"+URI+"&bkey="+bkey;
-	// }
+	if(bkey == "" || !bkey){
+		alert('It\'s a wrong approach.');
+		history.back();
+	}else{
+		getContent(bkey);
+	}
+
+	function delContent(){
+		msg = confirm('Are you sure you want to delete it?');
+		if(msg == false){
+
+		}else{
+			$.ajax({
+				type : 'post'
+				, async  :  true
+				, url  :  './api/product.api.php'
+				, data : {
+					type : 'delete'
+					, bkey : bkey
+				}
+				, success : function(response) {
+					if(response.RESULT == 1){
+						alert("Deleted.");
+						location.href='?';
+					}else{
+						alert(response.MSG);
+					}
+				}
+				, error : function(request, status, error) {
+					//console.log(error);
+					return;
+				}
+				, cache : false
+				, dataType : 'json'
+			});
+		}
+	}
+
+	function contentWrite(){
+		var URI = '?bkey=9f52511614e4d21fb860828fb9220e9b';
+
+		location.href=URI;
+	}
+
+	function getContent(bkey){
+		var tSearch = $('.sub_search_in').val();
+		$.ajax({
+			type : 'post'
+			, async  :  true
+			, url  :  './api/product.api.php'
+			, data : {
+				type : 'getContent'
+				, bkey : bkey
+				, tsearch : tSearch
+				, searchtype : searchType
+				, type2 : 'view'
+				, newTF : 'new'
+			}
+			, success : function(response) {
+				if(response.RESULT == 1){
+					var oData = response.DATA;
+					$(".product_description h2").text(oData['title']);
+					$(".product_description p").html(oData['contents2']);
+					$('.product_contents').html(oData['contents']);
+
+					var aHtml = Array();
+					var get_filename = oData['file3'];
+					var file_name = "";
+					if(get_filename.length > 0){
+						file_name = "upload/product/thum/"+get_filename;
+					}else{
+						file_name = "images/admin/no-image.png";
+					}
+					$('.product_image').html('<img src="'+file_name+'" />');
+
+					$('#product_after').attr('data-location', response.NEXT['bkey']);
+					$('#product_before').attr('data-location', response.PREV['bkey']);
+
+				}else{
+					alert(response.MSG);
+					location.href='?';
+				}
+			}
+			, error : function(request, status, error) {
+				//console.log(error);
+				return;
+			}
+			, cache : false
+			, dataType : 'json'
+		});
+	}
+
+	function changeLocation(page){
+		var URI = ''+'&page='+page;
+
+		location.href=URI;
+	}
+	function contentView(bkey){
+		var URI = '?';
+		location.href=URI+"&bkey="+bkey;
+	}
+	function setPagenation(page, page_s, page_e, total, limit){
+		var aHtml = Array();
+
+		var nLastPage = Math.ceil(total/limit);
+
+		if(nLastPage == 0) return;
+
+		if(page > nLastPage){
+			alert('페이지표시가 옳바르지 않습니다.');
+			return;
+		}
+
+		aHtml.push('<li class="page_box page_prev" onclick="javascript:'+(page == 1 ? "alert('첫 페이지 입니다.');" : 'changeLocation(' + (page-1) + ')')+'" ><i class="fa fa-chevron-left"></i></li>');
+
+		var page_count = 0;
+
+		for(var i = page_s; i <= page_e; i++){
+			aHtml.push('<li onclick="javascript:changeLocation(' + i + ')"' + (page == i ? 'class="page_box page_num on"' : 'class="page_box page_num"') + '>' + i + '</li>');
+		}
+		aHtml.push('<li onclick="javascript:'+(page == nLastPage ? "alert('마지막 페이지 입니다.');" : 'changeLocation(' + (page+1) + ')')+'" class="page_box page_next"><i class="fa fa-chevron-right"></i></a>');
+
+		$('.page_ul').html(aHtml.join(''));
+	}
 
 	$(document).ready(function () {
 		$("div.home-menu").addClass("opa_1");
@@ -253,21 +327,19 @@
 			$(this).children(".sub_dropmenu").hide().css("height","0");
 		});
 
-		
-	});
-
-	$(window).scroll(function(event){
-		/* LOAD BTN */
-		var objectHeight = document.documentElement.scrollHeight;
-		var winHeight = $(window).height();
-		var scrollHeight = $(document).scrollTop();
-
-		if(objectHeight == (winHeight+scrollHeight)){
-			var tNextbar = $(".btn-load").text();
-			if(tNextbar.length < 5 ){
-				getNewProduct();
+		$('.btn_move_product').click(function(){
+			var getBkey = $(this).attr('data-location');
+			if(getBkey == 0) {
+				alert('No posts are registered.');
+			} else {
+				getContent(getBkey);
 			}
-		}
+		});
+	});
+	$(window).scroll(function() {
+		var op = $('.home-menu');
+		if($(this).scrollTop() >= 200) op.removeClass("opa_1");
+		else op.addClass('opa_1');
 	});
 </script>
 <div class="to_top">
@@ -305,8 +377,8 @@
 		 });
 		 $(function(){
 			 var subMargin = $("div.home-menu").css("height");
-			 $("section.sub_wrap, .product_box").css("padding-top", 0);
-			 $("section.pro_info_wrap").css("padding-top", 0);
+			 $("section.sub_wrap, .product_box").css("padding-top",subMargin);
+			 $("section.pro_info_wrap").css("padding-top",subMargin);
 		 });
 	 });
 		
